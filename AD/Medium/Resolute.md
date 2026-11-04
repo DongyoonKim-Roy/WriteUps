@@ -373,6 +373,7 @@ d-----        9/27/2019   7:05 AM                ryan
 
 Basic enumeration was performed using tools and commands such as `whoami /priv`, `tasklist`, and WinPEAS, but nothing of interest was found. However, there is directory called `ryan`.
 
+---
 ## BloodHound
 <img width="1764" height="1188" alt="image" src="https://github.com/user-attachments/assets/1adbb865-79b7-4ed7-b99f-59b498447347" />
 <img width="1736" height="897" alt="image" src="https://github.com/user-attachments/assets/de5f3b8b-2752-425f-ab4b-1730f430f190" />
@@ -453,4 +454,8 @@ megabank\ryan
 
 Using the credentials `ryan:Serv3r4Admin4cc123!`, a WinRM session was successfully established.
 
-# Shell as Admin
+---
+# Privilege escalation
+## Enumeration
+```
+```
