@@ -85,6 +85,8 @@ ldapsearch -x -H ldap://megabank.local -D 'megabank.local' -b 'dc=megabank,dc=lo
 ```
 
 An anonymous LDAP search revealed detailed domain information, including user accounts and the password `Welcome123!` in a user `Marko Novak` description field.
+
+---
 ## smb - TCP 445
 ```
 nxc smb 10.129.100.9 --generate-hosts-file smb.hosts  
