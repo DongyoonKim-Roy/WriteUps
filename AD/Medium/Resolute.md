@@ -168,6 +168,9 @@ melanie
 zach
 simon
 naoki
+
+cat passwords.txt 
+Welcome123!
 ```
 
 Since null session authentication was accepted, I tried to enumerate users. 
