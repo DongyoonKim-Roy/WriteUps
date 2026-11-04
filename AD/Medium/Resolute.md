@@ -77,3 +77,6 @@ From namp scan, the hostname `resolute` and the domain `megabank.local` were ide
 ```
 10.129.100.9  RESOLUTE.megabank.local megabank.local RESOLUTE
 ```
+
+# Enumeration
+## smb
