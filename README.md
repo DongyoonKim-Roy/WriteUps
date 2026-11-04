@@ -1,2 +1,2 @@
 # WriteUps
-I solve boxes and write walkthrough!
+I solve one box a day and write a walkthrough!
