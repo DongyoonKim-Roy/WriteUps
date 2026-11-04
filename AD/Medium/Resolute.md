@@ -168,4 +168,5 @@ naoki
 ```
 Since null session authentication was accepted, I tried to enumerate users. 
 This returned a list of domain users, and the description for the user `marko` indicated that the password was set to `Welcome123!`.
+
 ---
