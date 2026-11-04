@@ -352,11 +352,32 @@ NT AUTHORITY\Authenticated Users           Well-known group S-1-5-11     Mandato
 NT AUTHORITY\This Organization             Well-known group S-1-5-15     Mandatory group, Enabled by default, Enabled group
 NT AUTHORITY\NTLM Authentication           Well-known group S-1-5-64-10  Mandatory group, Enabled by default, Enabled group
 Mandatory Label\Medium Mandatory Level     Label            S-1-16-8192
+
 *Evil-WinRM* PS C:\> hostname
 Resolute
+
+*Evil-WinRM* PS C:\Users> ls
+
+
+    Directory: C:\Users
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/25/2019  10:43 AM                Administrator
+d-----        12/4/2019   2:46 AM                melanie
+d-r---       11/20/2016   6:39 PM                Public
+d-----        9/27/2019   7:05 AM                ryan
+
 ```
 
-Basic enumeration was performed using tools and commands such as `whoami /priv`, `tasklist`, and WinPEAS, but nothing of interest was found.
+Basic enumeration was performed using tools and commands such as `whoami /priv`, `tasklist`, and WinPEAS, but nothing of interest was found. However, there is directory called `ryan`.
+
+## BloodHound
+<img width="1764" height="1188" alt="image" src="https://github.com/user-attachments/assets/1adbb865-79b7-4ed7-b99f-59b498447347" />
+<img width="1736" height="897" alt="image" src="https://github.com/user-attachments/assets/de5f3b8b-2752-425f-ab4b-1730f430f190" />
+
+According to the BloodHound graph, the user `ryan` is a member of the Remote Management Users group, which grants RDP access to the machine. Also, there is `ryan` directory on Users folder.
 
 ---
 ## Hidden Directory
