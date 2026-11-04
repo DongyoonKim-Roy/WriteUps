@@ -214,4 +214,52 @@ Using the enumerated usernames and the password `Welcome123!`, authentication as
 
 ---
 ```
+smbclient //10.129.100.9/IPC$ -U 'melanie'%'Welcome123!'
+Try "help" to get a list of possible commands.
+smb: \> ls
+NT_STATUS_NO_SUCH_FILE listing \*
+
+smbclient //10.129.100.9/NETLOGON -U 'melanie'%'Welcome123!'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed Sep 25 09:28:21 2019
+  ..                                  D        0  Wed Sep 25 09:28:21 2019
+
+smbclient //10.129.100.9/SYSVOL -U 'melanie'%'Welcome123!'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed Sep 25 09:28:21 2019
+  ..                                  D        0  Wed Sep 25 09:28:21 2019
+  megabank.local                     Dr        0  Wed Sep 25 09:28:21 2019
+
+tree
+.
+├── megabank.local
+│   ├── DfsrPrivate
+│   ├── Policies
+│   │   ├── {31B2F340-016D-11D2-945F-00C04FB984F9}
+│   │   │   ├── GPT.INI
+│   │   │   ├── MACHINE
+│   │   │   │   ├── Microsoft
+│   │   │   │   │   └── Windows NT
+│   │   │   │   │       └── SecEdit
+│   │   │   │   │           └── GptTmpl.inf
+│   │   │   │   └── Scripts
+│   │   │   │       ├── Shutdown
+│   │   │   │       └── Startup
+│   │   │   └── USER
+│   │   └── {6AC1786C-016F-11D2-945F-00C04fB984F9}
+│   │       ├── GPT.INI
+│   │       ├── MACHINE
+│   │       │   └── Microsoft
+│   │       │       └── Windows NT
+│   │       │           └── SecEdit
+│   │       │               └── GptTmpl.inf
+│   │       └── USER
+│   └── scripts
+```
+All available shares were enumerated, but no interesting files or information were found.
+
+---
+```
 ```
