@@ -80,6 +80,8 @@ From namp scan, the hostname `resolute` and the domain `megabank.local` were ide
 
 # Enumeration
 ## ldap - TCP 389
+<img width="592" height="156" alt="image" src="https://github.com/user-attachments/assets/48daff16-7ec0-412a-ada3-4af58bf48e6f" />
+
 ```
 ldapsearch -x -H ldap://megabank.local -D 'megabank.local' -b 'dc=megabank,dc=local'
 ```
