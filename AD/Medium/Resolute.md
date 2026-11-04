@@ -619,6 +619,7 @@ I found a useful article describing how to escalate privileges from the DnsAdmin
 
 First, a malicious DLL was generated and an SMB server was started on the attacker machine. Using the `dnscmd` utility, the DNS Server service was configured to load the DLL.
 
+---
 ```
 C:\Users\Administrator\Desktop>whoami
 whoami
