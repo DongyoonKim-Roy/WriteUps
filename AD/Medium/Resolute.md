@@ -83,6 +83,9 @@ From namp scan, the hostname `resolute` and the domain `megabank.local` were ide
 ```
 nxc smb 10.129.100.9 --generate-hosts-file smb.hosts  
 SMB         10.129.100.9    445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+
+cat smb.hosts 
+10.129.100.9     RESOLUTE.megabank.local megabank.local RESOLUTE
 ```
 
 I used `nxc smb IP_ADDR --generate-hosts-file smb.hosts` to make sure the hostname and domain both are correct.
