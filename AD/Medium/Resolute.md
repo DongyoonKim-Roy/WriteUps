@@ -73,7 +73,7 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 76.80 seconds
 ```
-From namp, the hostname resolute and the domain megabank.local are found, so I added both to /etc/hosts files : 
+From namp scan, the hostname `resolute` and the domain `megabank.local` were identified. Both were added both to the `/etc/hosts` file to allow proper name resolution: 
 ```
 10.129.100.9  RESOLUTE.megabank.local megabank.local RESOLUTE
 ```
