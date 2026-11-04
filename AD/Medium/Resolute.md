@@ -1,1 +1,2 @@
+# Resolute (Medium)
 
