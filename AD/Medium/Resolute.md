@@ -323,6 +323,7 @@ Mode                LastWriteTime         Length Name
 Using the credentials `melanie:Welcome123!`, a WinRM session was successfully established, and the user flag was found on the desktop.
 
 ---
+# Shell as ryan
 ```
 *Evil-WinRM* PS C:\> whoami /priv
 
