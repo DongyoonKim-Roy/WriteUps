@@ -57,7 +57,7 @@ The scan found two accessible directories — `/support` and `/dashboard`.
 
 A simple XSS payload was inserted into the message field, which accepts user input. The server responded with a page containing the following cookie value:
 
-`is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs`
+`is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs`\
 <img width="524" height="329" alt="image" src="https://github.com/user-attachments/assets/424b2bd8-9583-48fc-88de-bf4dd5fc4732" />
 
 
