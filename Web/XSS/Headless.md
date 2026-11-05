@@ -36,7 +36,7 @@ The scan found two accessible directories — /support and /dashboard.
 
 ---
 ### Site
-<img width="455" height="314" alt="image" src="https://github.com/user-attachments/assets/614b727e-adc3-43d7-83d5-2f7af30466be" />
+<img width="455" height="314" alt="image" src="https://github.com/user-attachments/assets/614b727e-adc3-43d7-83d5-2f7af30466be" />\
 <img width="291" height="712" alt="image" src="https://github.com/user-attachments/assets/af670b0e-f643-4921-b551-687af2a8df29" />
 
 The button redirects to /support, where there is a contact form.
