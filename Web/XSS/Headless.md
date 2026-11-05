@@ -61,8 +61,6 @@ A simple XSS payload was inserted into the message field, which accepts user inp
 
 <img width="921" height="596" alt="image" src="https://github.com/user-attachments/assets/9d8f5bd9-a64a-476d-b984-e4c9c464aeee" />
 
-<img width="363" height="74" alt="image" src="https://github.com/user-attachments/assets/7991a8bf-d0b8-4550-baa6-b944e9d0a815" />
-
 ```
 <script>alert(10)</script>
 " onmouseover="alert(10)"
@@ -74,3 +72,5 @@ After inspecting the page source, input field was identified as following:
 
 
 Based on the source, several XSS payloads were inserted into this field. The server either responded with a page containing the cookie value or returned no response.
+
+
