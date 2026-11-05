@@ -31,7 +31,7 @@ From the nmap scan, `port 5000` is running Werkzeug / Python
 <img width="651" height="578" alt="image" src="https://github.com/user-attachments/assets/1dfd6d08-0404-4ec8-aa88-502e656a2cbb" />
 
 ```
-feroxbuster -u http://10.129.100.124:5000/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -C 404,403 -x php,html,txt
+feroxbuster -u http://10.129.100.124:5000/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -C 404,403 -x php,html,txt,py
 ```
 
 The scan found two accessible directories — /support and /dashboard.
