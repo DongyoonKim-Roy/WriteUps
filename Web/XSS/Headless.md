@@ -82,4 +82,4 @@ No XSS payloads worked, so a random header was added, and its value was reflecte
 ```
 <script>alert(10)</script>
 ```
-Simple XSS payload was inserted to the custom header, and the page was reflected.
+A simple XSS payload (<script>alert(10)</script>) was inserted into the custom header and was reflected in the page.
