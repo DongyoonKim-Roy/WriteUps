@@ -73,4 +73,6 @@ A simple XSS payload was inserted into the message field, which accepts user inp
 After inspecting the page source, input field was identified as the picture.
 Based on the source, several XSS payloads were inserted into this field. The server either responded with a page containing the cookie value or returned no response.
 
+<img width="1297" height="350" alt="image" src="https://github.com/user-attachments/assets/58266d23-d8ea-404a-b810-74731cedc428" />
 
+No XSS payloads worked, so a random header was added, and its value was reflected in the page.
