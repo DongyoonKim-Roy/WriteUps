@@ -47,7 +47,9 @@ The scan found two accessible directories — `/support` and `/dashboard`.
 
 ---
 ### XSS
-<img width="316" height="729" alt="image" src="https://github.com/user-attachments/assets/d0810392-ea67-467c-b562-7bc0818e2863" />
+<img width="316" height="729" alt="image" src="https://github.com/user-attachments/assets/d0810392-ea67-467c-b562-7bc0818e2863" />\
+<img width="655" height="518" alt="image" src="https://github.com/user-attachments/assets/514aeaeb-4b0d-4cc1-af69-68a6db53bb4c" />
+
 
 ```
 <script>alert(10)</script>
