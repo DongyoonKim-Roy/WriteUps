@@ -71,8 +71,8 @@ A simple XSS payload was inserted into the message field, which accepts user inp
 >
 <>
 ```
-After inspecting the page source, I identified the following input field:
+After inspecting the page source, input field was identified as following:
 
 `<input type="text" id="fname" name="fname" required>`
 
-Several XSS payloads were inserted into this field. The server either responded with a page containing the cookie value or returned no response.
+Based on the source, several XSS payloads were inserted into this field. The server either responded with a page containing the cookie value or returned no response.
