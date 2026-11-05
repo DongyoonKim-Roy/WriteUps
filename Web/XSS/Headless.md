@@ -76,3 +76,10 @@ Based on the source, several XSS payloads were inserted into this field. The ser
 <img width="1297" height="350" alt="image" src="https://github.com/user-attachments/assets/58266d23-d8ea-404a-b810-74731cedc428" />
 
 No XSS payloads worked, so a random header was added, and its value was reflected in the page.
+
+<img width="1370" height="360" alt="image" src="https://github.com/user-attachments/assets/a767a409-15f0-4c09-bedf-c3521ee1ef56" />
+
+```
+<script>alert(10)</script>
+```
+Simple XSS payload was inserted to the custom header, and the page was reflected.
