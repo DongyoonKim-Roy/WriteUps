@@ -59,8 +59,6 @@ A simple XSS payload was inserted into the message field, which accepts user inp
 
 `is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs`
 
-<img width="524" height="329" alt="image" src="https://github.com/user-attachments/assets/424b2bd8-9583-48fc-88de-bf4dd5fc4732" />
-
 <img width="921" height="596" alt="image" src="https://github.com/user-attachments/assets/9d8f5bd9-a64a-476d-b984-e4c9c464aeee" />
 
 <img width="363" height="74" alt="image" src="https://github.com/user-attachments/assets/7991a8bf-d0b8-4550-baa6-b944e9d0a815" />
@@ -72,7 +70,7 @@ A simple XSS payload was inserted into the message field, which accepts user inp
 <>
 ```
 After inspecting the page source, input field was identified as following:
+<img width="524" height="329" alt="image" src="https://github.com/user-attachments/assets/424b2bd8-9583-48fc-88de-bf4dd5fc4732" />
 
-![Uploading image.png…]()
 
 Based on the source, several XSS payloads were inserted into this field. The server either responded with a page containing the cookie value or returned no response.
