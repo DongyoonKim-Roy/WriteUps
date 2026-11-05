@@ -55,4 +55,6 @@ The scan found two accessible directories — `/support` and `/dashboard`.
 <script>alert(10)</script>
 ```
 
-Since there is a field that accepts user input, a simple XSS payload was inserted into the message field. Then, it responded with the page which includes Cookie value : `is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs`
+A simple XSS payload was inserted into the message field, which accepts user input. The server responded with a page containing the following cookie value:
+
+`is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs`
