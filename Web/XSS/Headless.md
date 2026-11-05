@@ -34,11 +34,14 @@ From the nmap scan, `port 5000` is running Werkzeug / Python
 feroxbuster -u http://10.129.100.124:5000/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -C 404,403 -x php,html,txt,py
 ```
 
-The scan found two accessible directories — /support and /dashboard.
+The scan found two accessible directories — `/support` and `/dashboard`.
 
 ---
 ### Site
 <img width="455" height="314" alt="image" src="https://github.com/user-attachments/assets/614b727e-adc3-43d7-83d5-2f7af30466be" />\
 <img width="291" height="712" alt="image" src="https://github.com/user-attachments/assets/af670b0e-f643-4921-b551-687af2a8df29" />
 
-The button redirects to /support, where there is a contact form.
+The button redirects to `/support`, where there is a contact form.\
+However, no feedback is displayed after submitting the form.
+
+
