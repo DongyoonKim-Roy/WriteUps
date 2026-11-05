@@ -55,3 +55,4 @@ The scan found two accessible directories — `/support` and `/dashboard`.
 <script>alert(10)</script>
 ```
 
+Since there is a field that accepts user input, a simple XSS payload was inserted into the message field.
