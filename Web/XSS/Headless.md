@@ -45,5 +45,6 @@ feroxbuster -u http://10.129.100.124:5000/ -w /usr/share/seclists/Discovery/Web-
 
 The scan found two accessible directories — `/support` and `/dashboard`.
 
+---
 ### XSS
 
