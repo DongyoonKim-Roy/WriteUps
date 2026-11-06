@@ -101,3 +101,11 @@ An HTTP server was started on the attacker machine, and a cookie-stealing payloa
 
 The newly revealed cookie was inserted, and the /dashboard page was successfully accessed.
 
+<img width="1290" height="237" alt="image" src="https://github.com/user-attachments/assets/440057e4-fe21-4256-8efb-d387ba7b158f" />
+
+In the browser, a custom 
+
+<img width="1430" height="830" alt="image" src="https://github.com/user-attachments/assets/729b208d-a1c6-4e39-a91e-2993dce387a9" />
+
+
+
