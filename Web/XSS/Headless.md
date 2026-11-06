@@ -109,7 +109,7 @@ In the browser, nothing could be modified, but the date field was the only param
 ---
 # Shell as dvir
 
-<img width="509" height="381" alt="image" src="https://github.com/user-attachments/assets/3e7bfcb6-6179-4de9-a85f-45f14fe08fe9" />\
+<img width="509" height="381" alt="image" src="https://github.com/user-attachments/assets/3e7bfcb6-6179-4de9-a85f-45f14fe08fe9" />
 
 <img width="250" height="42" alt="image" src="https://github.com/user-attachments/assets/1a79f800-5e55-4e7c-9ff7-8fa313b195eb" />
 
