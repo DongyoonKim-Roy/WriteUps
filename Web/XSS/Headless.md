@@ -126,7 +126,7 @@ user `dvir` can run `/usr/bin/syscheck` without password
 
 After reviewing the code, it checks for a process named initdb.sh. If the process is not running, it executes initdb.sh.
 
-<img width="387" height="64" alt="image" src="https://github.com/user-attachments/assets/72a9166d-2d02-4869-b243-4537587beeb2" />
+<img width="387" height="64" alt="image" src="https://github.com/user-attachments/assets/72a9166d-2d02-4869-b243-4537587beeb2" />\
 <img width="197" height="33" alt="image" src="https://github.com/user-attachments/assets/179be572-7f83-43f4-999c-400f1971d9e1" />
 
 
