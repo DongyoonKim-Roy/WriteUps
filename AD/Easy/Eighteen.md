@@ -98,3 +98,15 @@ During user enumeration, the `appdev` account was identified. Authentication as 
 <img width="1183" height="147" alt="image" src="https://github.com/user-attachments/assets/4682a4c3-d6e4-4895-9e0b-73a9e204b664" />
 
 With access to the `financial_planner` database as `appdev`, an admin password hash was recovered from the `users` table.
+
+# Shell as adam.scott
+## Recover Hash
+<img width="825" height="43" alt="image" src="https://github.com/user-attachments/assets/9c590a7b-31d2-4d90-9930-5ab8c316ed1c" />
+
+Recovered hash was saved in the `hash.txt` file. It is identified as PBKDF2-HMAC-SHA256 hash.
+
+<img width="810" height="103" alt="image" src="https://github.com/user-attachments/assets/0344addf-30fa-46d3-bd3e-db1c06a4bab0" />
+<img width="407" height="49" alt="image" src="https://github.com/user-attachments/assets/52f0d911-783b-4b84-98a4-51d004956d43" />
+<img width="757" height="45" alt="image" src="https://github.com/user-attachments/assets/75f773c8-2c76-44eb-9888-89d1d67b44f2" />
+
+After some research, a website (https://notes.benheater.com/books/hash-cracking/page/pbkdf2-hmac-sha256) was found and it shows how to decrypt the hash. 
