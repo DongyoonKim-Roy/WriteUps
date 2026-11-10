@@ -123,6 +123,6 @@ After trying a few approaches, no foothold was obtained. A password spray was th
 
 ## Evil-winrm
 <img width="428" height="40" alt="image" src="https://github.com/user-attachments/assets/7334d164-dd19-418c-a15e-eecc0e9c3708" />
-<img width="485" height="174" alt="image" src="https://github.com/user-attachments/assets/305d86e4-66ed-4b50-b7af-72a0def331c8" />\
+<img width="485" height="174" alt="image" src="https://github.com/user-attachments/assets/305d86e4-66ed-4b50-b7af-72a0def331c8" />
 
 Authentication via Evil-WinRM as adam.scott was successful, and the user flag was retrieved.
