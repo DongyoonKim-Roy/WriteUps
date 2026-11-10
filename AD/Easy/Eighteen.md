@@ -109,4 +109,19 @@ Recovered hash was saved in the `hash.txt` file. It is identified as PBKDF2-HMAC
 <img width="407" height="49" alt="image" src="https://github.com/user-attachments/assets/52f0d911-783b-4b84-98a4-51d004956d43" />
 <img width="757" height="45" alt="image" src="https://github.com/user-attachments/assets/75f773c8-2c76-44eb-9888-89d1d67b44f2" />
 
-Research led to a useful reference (https://notes.benheater.com/books/hash-cracking/page/pbkdf2-hmac-sha256) on cracking `PBKDF2-HMAC-SHA256` hashes. Following the guidance, the plaintext password `iloveyou1` was recovered.
+Research led to a useful reference (https://notes.benheater.com/books/hash-cracking/page/pbkdf2-hmac-sha256) on cracking `PBKDF2-HMAC-SHA256` hashes. Following the guidance, the plaintext password, `iloveyou1`, was recovered.
+
+---
+## Login Admin Portal
+<img width="1256" height="1117" alt="image" src="https://github.com/user-attachments/assets/dffa107d-ff43-4269-bbe7-ccd264303f03" />
+Access to the admin portal with the recovered password was successful, but no useful information was found.
+
+---
+## Password Spray
+<img width="810" height="55" alt="image" src="https://github.com/user-attachments/assets/36e88e07-b0b5-411d-a7fa-ccfbe7abf881" />
+After trying a few approaches, no foothold was obtained. A password spray was then conducted using the enumerated usernames and the recovered password, which successfully authenticated as `adam.scott`.
+
+## Evil-winrm
+<img width="428" height="40" alt="image" src="https://github.com/user-attachments/assets/7334d164-dd19-418c-a15e-eecc0e9c3708" />
+<img width="485" height="174" alt="image" src="https://github.com/user-attachments/assets/305d86e4-66ed-4b50-b7af-72a0def331c8" />
+Authentication via Evil-WinRM as adam.scott was successful, and the user flag was retrieved.
