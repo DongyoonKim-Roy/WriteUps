@@ -81,5 +81,13 @@ Default credentials `kevin:iNa2we6haRj2gaw!` were provided for the box. After su
 
 <img width="896" height="794" alt="image" src="https://github.com/user-attachments/assets/4e65eaf1-cb1c-4281-988e-7e40b746df8b" />
 <img width="862" height="378" alt="image" src="https://github.com/user-attachments/assets/0f0e14bb-cc9c-4a64-bbb8-516ed6f6819e" />
+<img width="776" height="134" alt="image" src="https://github.com/user-attachments/assets/74a73303-396c-47af-b735-892c569b8b43" />
 
+User kevin lacks the privileges required to enable or run xp_cmdshell. A hash was also captured via the SMB server, but cracking attempts were unsuccessful.
+
+<img width="891" height="188" alt="image" src="https://github.com/user-attachments/assets/e4c736ea-8444-439a-968e-515baff5b777" />
+
+Among the available databases, `financial_planner` stood out, but `kevin` did not have permission to access it. No interesting data was found in the remaining databases.
+
+<img width="914" height="187" alt="image" src="https://github.com/user-attachments/assets/f6d9ab25-8c83-40d8-8164-ba3a85538082" />
 
