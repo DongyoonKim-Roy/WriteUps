@@ -50,3 +50,12 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 27.50 seconds
 ```
 The nmap scan identified the domain `eighteen.htb`, which was added to `/etc/hosts`. Additionally, MSSQL was found to be listening on the target.
+
+# Enumeration
+## http - TCP 80
+<img width="1332" height="1147" alt="image" src="https://github.com/user-attachments/assets/7f94c025-8b2b-4913-b7b1-5e56fe8d92a8" />
+<img width="1203" height="875" alt="image" src="https://github.com/user-attachments/assets/d8913cb7-fb62-4270-b7e9-15733862dca8" />
+<img width="1380" height="1213" alt="image" src="https://github.com/user-attachments/assets/5c26c4de-cfd0-436f-80b1-706375c24fe1" />
+<img width="1190" height="239" alt="image" src="https://github.com/user-attachments/assets/b1d1c2f8-dd7d-4b10-a110-88c7120cd70f" />
+
+
