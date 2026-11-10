@@ -126,3 +126,10 @@ After trying a few approaches, no foothold was obtained. A password spray was th
 <img width="485" height="174" alt="image" src="https://github.com/user-attachments/assets/305d86e4-66ed-4b50-b7af-72a0def331c8" />
 
 Authentication via Evil-WinRM as adam.scott was successful, and the user flag was retrieved.
+
+---
+# Shell as root
+## Enumeration
+<img width="407" height="138" alt="image" src="https://github.com/user-attachments/assets/a9120975-a1c3-453b-869c-e15c62c0c7fc" />
+
+Enumeration with `winPEAS`, `whoami`, and similar tools did not yield anything useful. The file `app.py` in `inetpub\eighteen.htb` contained database credentials, but they did not provide any additional access or information.
