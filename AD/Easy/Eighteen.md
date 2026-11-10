@@ -137,4 +137,5 @@ Enumeration with `winPEAS`, `whoami`, and similar tools did not yield anything u
 ---
 ## Bloodhound
 <img width="2447" height="1280" alt="image" src="https://github.com/user-attachments/assets/fe36d29c-8120-4a96-b3b3-1217db2edbfc" />
+`SharpHound.exe` was uploaded into the target machine. 
 According to the BloodHound data, `adam.scott` belongs to the `IT` group. However, no interesting or abusable privileges were found.
