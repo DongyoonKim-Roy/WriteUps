@@ -133,3 +133,8 @@ Authentication via Evil-WinRM as adam.scott was successful, and the user flag wa
 <img width="407" height="138" alt="image" src="https://github.com/user-attachments/assets/a9120975-a1c3-453b-869c-e15c62c0c7fc" />
 
 Enumeration with `winPEAS`, `whoami`, and similar tools did not yield anything useful. The file `app.py` in `inetpub\eighteen.htb` contained database credentials, but they did not provide any additional access or information.
+
+---
+## Bloodhound
+<img width="2447" height="1280" alt="image" src="https://github.com/user-attachments/assets/fe36d29c-8120-4a96-b3b3-1217db2edbfc" />
+According to the BloodHound data, `adam.scott` belongs to the `IT` group. However, no interesting or abusable privileges were found.
