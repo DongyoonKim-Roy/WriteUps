@@ -73,3 +73,7 @@ Directory Bruteforce was conducted, but nothing interesting was found.
 ---
 ## MSSQL - TCP 1433
 
+<img width="887" height="677" alt="image" src="https://github.com/user-attachments/assets/cf735812-8a6c-4b1a-a2b7-5751937cef59" />
+Default credentials (`kevin:iNa2we6haRj2gaw!`) were provided for the box. After successfully authenticating with these credentials, a RID brute-force attack was conducted. Discovered user names were saved into `users.txt` file. 
+
+
