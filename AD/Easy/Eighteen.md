@@ -79,3 +79,7 @@ Directory Bruteforce was conducted, but nothing interesting was found.
 Default credentials `kevin:iNa2we6haRj2gaw!` were provided for the box. After successfully authenticating with these credentials, a RID brute-force attack was conducted. Discovered user names were saved into `users.txt` file. 
 
 
+<img width="896" height="794" alt="image" src="https://github.com/user-attachments/assets/4e65eaf1-cb1c-4281-988e-7e40b746df8b" />
+<img width="862" height="378" alt="image" src="https://github.com/user-attachments/assets/0f0e14bb-cc9c-4a64-bbb8-516ed6f6819e" />
+
+
