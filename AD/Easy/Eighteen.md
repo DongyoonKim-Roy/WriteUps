@@ -95,5 +95,6 @@ Among the available databases, `financial_planner` stood out, but `kevin` did no
 During user enumeration, the `appdev` account was identified. Authentication as `appdev` succeeded.
 
 <img width="570" height="195" alt="image" src="https://github.com/user-attachments/assets/f26bd8ce-5d17-418d-add9-1054d244e7c7" />
+<img width="1183" height="147" alt="image" src="https://github.com/user-attachments/assets/4682a4c3-d6e4-4895-9e0b-73a9e204b664" />
 
 With access to the `financial_planner` database as `appdev`, an admin password hash was recovered from the `users` table.
