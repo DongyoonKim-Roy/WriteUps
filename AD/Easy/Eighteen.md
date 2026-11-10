@@ -58,4 +58,12 @@ The nmap scan identified the domain `eighteen.htb`, which was added to `/etc/hos
 <img width="1380" height="1213" alt="image" src="https://github.com/user-attachments/assets/5c26c4de-cfd0-436f-80b1-706375c24fe1" />
 <img width="1190" height="239" alt="image" src="https://github.com/user-attachments/assets/b1d1c2f8-dd7d-4b10-a110-88c7120cd70f" />
 
+The site includes login and registration functionality. After registering an account, nothing of interest was discovered. Access to the admin page was denied. To access the page, it needs admin credentials.
 
+---
+### Directory Bruteforce
+
+<img width="825" height="567" alt="image" src="https://github.com/user-attachments/assets/5a2b5ab4-e0fa-4a90-912c-be7f059e0b48" />
+<img width="873" height="401" alt="image" src="https://github.com/user-attachments/assets/68bf7c76-361d-40c8-96eb-b53f65eab57f" />
+
+Directory Bruteforce was conducted, but nothing interesting was found.
