@@ -3,6 +3,7 @@
 # Machine Info
 `Eighteen` is an easy difficulty Windows machine that demonstrates common weaknesses in database access control and Active Directory misconfigurations. Initial access is obtained by identifying valid MSSQL credentials and abusing impersonation privileges to access backend application data. Extracted password hashes are cracked offline and used for password spraying, leading to WinRM access as a domain user. Privilege escalation is achieved by abusing delegated permissions in Active Directory. Specifically, membership in a group with CreateChild rights over an Organisational Unit allows exploitation of the BadSuccessor technique to create a delegated Managed Service Account (dMSA) linked to the Administrator account, ultimately leading to full domain compromise.
 
+---
 # Reconnaissance
 ## nmap
 ```
@@ -51,6 +52,7 @@ Nmap done: 1 IP address (1 host up) scanned in 27.50 seconds
 ```
 The nmap scan identified the domain `eighteen.htb`, which was added to `/etc/hosts`. Additionally, MSSQL was found to be listening on the target.
 
+---
 # Enumeration
 ## HTTP - TCP 80
 <img width="1332" height="1147" alt="image" src="https://github.com/user-attachments/assets/7f94c025-8b2b-4913-b7b1-5e56fe8d92a8" />
