@@ -90,6 +90,7 @@ User kevin lacks the privileges required to enable or run xp_cmdshell. A hash wa
 Among the available databases, `financial_planner` stood out, but `kevin` did not have permission to access it. No interesting data was found in the remaining databases.
 
 <img width="914" height="187" alt="image" src="https://github.com/user-attachments/assets/f6d9ab25-8c83-40d8-8164-ba3a85538082" />
-<img width="1107" height="98" alt="image" src="https://github.com/user-attachments/assets/b0bf6ec9-7f5c-4523-bf6a-e23d89a9b753" />
+<img width="387" height="43" alt="image" src="https://github.com/user-attachments/assets/930a86bd-20d2-41f5-aa18-42c0ca0b2610" />
+
 
 
