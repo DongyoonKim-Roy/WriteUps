@@ -109,4 +109,4 @@ Recovered hash was saved in the `hash.txt` file. It is identified as PBKDF2-HMAC
 <img width="407" height="49" alt="image" src="https://github.com/user-attachments/assets/52f0d911-783b-4b84-98a4-51d004956d43" />
 <img width="757" height="45" alt="image" src="https://github.com/user-attachments/assets/75f773c8-2c76-44eb-9888-89d1d67b44f2" />
 
-After some research, a website (https://notes.benheater.com/books/hash-cracking/page/pbkdf2-hmac-sha256) was found and it shows how to decrypt the hash. 
+Research led to a useful reference (https://notes.benheater.com/books/hash-cracking/page/pbkdf2-hmac-sha256) on cracking `PBKDF2-HMAC-SHA256` hashes. Following the guidance, the plaintext password `iloveyou1` was recovered.
