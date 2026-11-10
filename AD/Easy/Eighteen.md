@@ -72,6 +72,7 @@ Directory Bruteforce was conducted, but nothing interesting was found.
 
 ---
 ## MSSQL - TCP 1433
+<img width="886" height="69" alt="image" src="https://github.com/user-attachments/assets/6e492bd1-b940-4206-a6d3-a85da3253657" />
 
 <img width="887" height="677" alt="image" src="https://github.com/user-attachments/assets/cf735812-8a6c-4b1a-a2b7-5751937cef59" />
 
