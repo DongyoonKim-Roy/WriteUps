@@ -155,3 +155,9 @@ f<img width="1104" height="260" alt="image" src="https://github.com/user-attachm
 To verify that the machine was vulnerable to BadSuccessor, a PowerShell script was uploaded to the target and run.
 The machine was identified as vulnerable to the BadSuccessor attack.
 
+---
+### Failed
+<img width="1150" height="423" alt="image" src="https://github.com/user-attachments/assets/74a460f5-d354-4209-a589-755c414c645d" />
+
+Sharp Successor was uploaded into the powershell and it wasn't worked. It's because user `adam.scott` only has createchild privilege on OU=Staff, but not Administrator Object.
+
