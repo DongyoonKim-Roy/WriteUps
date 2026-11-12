@@ -142,6 +142,10 @@ Enumeration with `winPEAS`, `whoami`, and similar tools did not yield anything u
 `SharpHound.exe` was uploaded into the target machine. 
 According to the BloodHound data, `adam.scott` belongs to the `IT` group. However, no interesting or abusable privileges were found.
 
+---
+## Bad Successor
 <img width="639" height="177" alt="image" src="https://github.com/user-attachments/assets/cb2e76de-3e37-452c-9727-382651fc15bf" />
 <img width="815" height="135" alt="image" src="https://github.com/user-attachments/assets/0089aecb-1215-46da-b8bd-bf6cd83d8563" />
+
+From the shell, the domain and forest functional levels were identified as Windows Server 2025, which is vulnerable to the BadSuccessor attack (https://www.akamai.com/blog/security-research/abusing-dmsa-for-privilege-escalation-in-active-directory).
 
