@@ -147,7 +147,7 @@ According to the BloodHound data, `adam.scott` belongs to the `IT` group. Howeve
 <img width="639" height="177" alt="image" src="https://github.com/user-attachments/assets/cb2e76de-3e37-452c-9727-382651fc15bf" />
 <img width="815" height="135" alt="image" src="https://github.com/user-attachments/assets/0089aecb-1215-46da-b8bd-bf6cd83d8563" />
 
-From the shell, the domain and forest functional levels were identified as Windows Server 2025, which is vulnerable to the BadSuccessor attack (https://www.akamai.com/blog/security-research/abusing-dmsa-for-privilege-escalation-in-active-directory).
+From the shell, the domain and forest functional levels were identified as Windows Server 2025, which is vulnerable to the `BadSuccessor attack` (https://www.akamai.com/blog/security-research/abusing-dmsa-for-privilege-escalation-in-active-directory).
 
 <img width="565" height="102" alt="image" src="https://github.com/user-attachments/assets/c97c172d-e55c-4324-9aa5-4950c0bdbe2a" />
 f<img width="1104" height="260" alt="image" src="https://github.com/user-attachments/assets/fefee51c-3955-412b-a6ca-1ace36b7f396" />
@@ -158,5 +158,5 @@ To verify that the machine was vulnerable to `BadSuccessor`, a PowerShell script
 ### Failed
 <img width="1150" height="423" alt="image" src="https://github.com/user-attachments/assets/74a460f5-d354-4209-a589-755c414c645d" />
 
-Sharp Successor was uploaded into the powershell and it wasn't worked. It's because user `adam.scott` only has createchild privilege on OU=Staff, but not Administrator Object.
+`Sharp Successor` was uploaded into the powershell and it wasn't worked. It's because user `adam.scott` only has `CreateChild` privilege on `OU=Staff`, but not `Administrator Object`.
 
