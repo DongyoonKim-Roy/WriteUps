@@ -152,8 +152,7 @@ From the shell, the domain and forest functional levels were identified as Windo
 <img width="565" height="102" alt="image" src="https://github.com/user-attachments/assets/c97c172d-e55c-4324-9aa5-4950c0bdbe2a" />
 f<img width="1104" height="260" alt="image" src="https://github.com/user-attachments/assets/fefee51c-3955-412b-a6ca-1ace36b7f396" />
 
-To verify that the machine was vulnerable to BadSuccessor, a PowerShell script was uploaded to the target and run.
-Also, the script shows that the user `adam.scott` has the privilege to `createchild` on `OU=Staff`. The machine was identified as vulnerable to the BadSuccessor attack.
+To verify that the machine was vulnerable to `BadSuccessor`, a PowerShell script was uploaded to the target and executed. The script confirmed that `adam.scott` has `CreateChild` privileges on `OU=Staff`, identifying the machine as vulnerable to the `BadSuccessor attack`.
 
 ---
 ### Failed
