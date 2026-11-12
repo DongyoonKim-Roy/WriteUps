@@ -149,3 +149,9 @@ According to the BloodHound data, `adam.scott` belongs to the `IT` group. Howeve
 
 From the shell, the domain and forest functional levels were identified as Windows Server 2025, which is vulnerable to the BadSuccessor attack (https://www.akamai.com/blog/security-research/abusing-dmsa-for-privilege-escalation-in-active-directory).
 
+<img width="565" height="102" alt="image" src="https://github.com/user-attachments/assets/c97c172d-e55c-4324-9aa5-4950c0bdbe2a" />
+f<img width="1104" height="260" alt="image" src="https://github.com/user-attachments/assets/fefee51c-3955-412b-a6ca-1ace36b7f396" />
+
+To verify that the machine was vulnerable to BadSuccessor, a PowerShell script was uploaded to the target and run.
+The machine was identified as vulnerable to the BadSuccessor attack.
+
