@@ -117,4 +117,11 @@ The `SAM` and `SYSTEM` files were downloaded using the commands, and the Adminis
 ---
 ## Server Operators Group
 
-After researching for privilege escalation with `Server Operators Group`, useful website was found (https://www.hackingarticles.in/windows-privilege-escalation-server-operator-group/)
+After researching for privilege escalation with `Server Operators Group`, useful website was found (https://www.hackingarticles.in/windows-privilege-escalation-server-operator-group/).
+
+<img width="366" height="69" alt="image" src="https://github.com/user-attachments/assets/e8eeeb09-6a6e-49f4-86d2-6d52a3e9b4ec" />
+<img width="601" height="18" alt="image" src="https://github.com/user-attachments/assets/2ed5a752-a54c-4b91-bff0-f8ef1284b981" />
+
+
+
+
