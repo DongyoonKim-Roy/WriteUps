@@ -91,6 +91,8 @@ With the discovered information, `evil-winrm` was successful and `user` flag was
 ---
 # Shell as Administrator
 ## Enumeration
-### WinPEAS
+<img width="591" height="277" alt="image" src="https://github.com/user-attachments/assets/1d3a7156-706c-4fe7-99fe-e78f9d6b0ea6" />
+<img width="998" height="283" alt="image" src="https://github.com/user-attachments/assets/e87eddb7-a45b-4fec-8f8a-4d936f0dab0d" />
 
+User svc-printer has multiple privileges, but `SeBackupPrivilege` and `SeRestorePrivilege` look promising.
 
