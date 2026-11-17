@@ -74,6 +74,22 @@ In the `Settings` tab, with the given information, `Server Address`, `Server Por
 
 However, it responses with username : `svc-printer` and password : `1edFg43012!!` after `Server Address` with attacker's `ip address`. 
 
+---
+# SMB - TCP 445
+<img width="1437" height="149" alt="image" src="https://github.com/user-attachments/assets/379fab46-4329-4149-a100-535d0677b247" />
+<img width="1440" height="189" alt="image" src="https://github.com/user-attachments/assets/be6b3f27-b872-4371-9e1f-ded7ce1c2a1b" />
 
+With the discovered information, several `users` and `shares` were found, but none of them contained useful data.
+
+---
+# Shell as svc-printer
+<img width="1756" height="95" alt="image" src="https://github.com/user-attachments/assets/fbb396f0-54a2-44f5-a695-b2b39eceb851" />
+<img width="470" height="127" alt="image" src="https://github.com/user-attachments/assets/c59121ed-e8b5-4a7a-9f22-f76d8ee64b2c" />
+
+With the discovered information, `evil-winrm` was successful and `user` flag was found.
+
+---
+# Shell as Administrator
+## Enumeration
 
 
