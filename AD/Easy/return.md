@@ -66,7 +66,8 @@ The `nmap` scan identified the domain `return.local`, which was added to `/etc/h
 <img width="1164" height="679" alt="image" src="https://github.com/user-attachments/assets/dfe1e0bc-21e9-48b0-83a1-a1b2a85726d4" />
 <img width="1034" height="548" alt="image" src="https://github.com/user-attachments/assets/dc877217-f6a1-49f7-9cef-336d249203da" />
 
-The website includes Home, Settings, Fax, and Troubleshooting tabs, but the Fax and Troubleshooting tabs don’t respond when clicked.\
+The website includes `Home`, `Settings`, `Fax`, and `Troubleshooting` tabs, but the `Fax` and `Troubleshooting` tabs don’t respond when clicked.\
+On the `Settings` tab, the `Server Address` was discovered to be `printer.return.local`. It is saved in `/etc/hosts` file\
 In the `Settings` tab, with the given information, `Server Address`, `Server Port`, `Username`, `Password`, clicking `Update` button doesn't respond.
 
 <img width="1302" height="342" alt="image" src="https://github.com/user-attachments/assets/1d89649b-3a68-487e-939a-9a7e8f81aa8b" />
