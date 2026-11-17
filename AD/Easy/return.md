@@ -70,7 +70,7 @@ The website includes Home, Settings, Fax, and Troubleshooting tabs, but the Fax 
 In the `Settings` tab, with the given information, `Server Address`, `Server Port`, `Username`, `Password`, clicking `Update` button doesn't respond.
 
 <img width="1302" height="342" alt="image" src="https://github.com/user-attachments/assets/1d89649b-3a68-487e-939a-9a7e8f81aa8b" />
-However, it responses with username : `svc-printer` and password : `1edFg43012!!` after `Server Address` with attacker's `ip address`. 
+However, it responses with username  `svc-printer` and password : `1edFg43012!!` after `Server Address` with attacker's `ip address`. 
 
 
 
