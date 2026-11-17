@@ -91,5 +91,6 @@ With the discovered information, `evil-winrm` was successful and `user` flag was
 ---
 # Shell as Administrator
 ## Enumeration
+### WinPEAS
 
 
