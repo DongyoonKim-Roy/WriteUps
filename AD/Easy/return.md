@@ -97,7 +97,7 @@ With the discovered information, `evil-winrm` was successful and `user` flag was
 User `svc-printer` has multiple privileges, but `SeBackupPrivilege` looks promising.
 Also, the user is in `Server Operators` group.
 
-
+---
 ## SeBackupPrivilege
 ```
 cd c:\
@@ -114,3 +114,6 @@ download system
 
 With the commands and `sam` and `system` file were downloaded, and `administrator` hash : `34386a771aaca697f447754e4863d38a` was recovered.\
 However, login was not successful.
+
+---
+## Server Operators Group
