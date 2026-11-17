@@ -124,8 +124,7 @@ After researching for privilege escalation with `Server Operators Group`, useful
 <img width="880" height="145" alt="image" src="https://github.com/user-attachments/assets/2a248bdf-2e89-412d-b583-f34e9d30d433" />
 <img width="416" height="139" alt="image" src="https://github.com/user-attachments/assets/b7151824-d00a-41af-9d79-a47a416f0df1" />
 
-After `nc.exe` was uploaded into the target machine, and change `binpath` 
-
+After `nc.exe` was uploaded to the target and the binPath was modified as shown in the image, a reverse shell as `Administrator` was successfully established and the root flag was obtained.
 
 
 
