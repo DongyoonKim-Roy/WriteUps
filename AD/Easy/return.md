@@ -122,6 +122,10 @@ After researching for privilege escalation with `Server Operators Group`, useful
 <img width="366" height="69" alt="image" src="https://github.com/user-attachments/assets/e8eeeb09-6a6e-49f4-86d2-6d52a3e9b4ec" />
 <img width="601" height="18" alt="image" src="https://github.com/user-attachments/assets/2ed5a752-a54c-4b91-bff0-f8ef1284b981" />
 <img width="880" height="145" alt="image" src="https://github.com/user-attachments/assets/2a248bdf-2e89-412d-b583-f34e9d30d433" />
+<img width="416" height="139" alt="image" src="https://github.com/user-attachments/assets/b7151824-d00a-41af-9d79-a47a416f0df1" />
+
+After `nc.exe` was uploaded into the target machine, and change `binpath` 
+
 
 
 
