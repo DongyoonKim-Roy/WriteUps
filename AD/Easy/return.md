@@ -109,6 +109,8 @@ download sam
 download system
 ```
 <img width="726" height="153" alt="image" src="https://github.com/user-attachments/assets/c0cf0be9-e333-4cf1-a353-2829d6cfcee5" />
+<img width="1030" height="216" alt="image" src="https://github.com/user-attachments/assets/6f168b26-477f-4b37-963d-b01167dd3cc9" />
+
 
 With the commands and `sam` and `system` file were downloaded, and `administrator` hash : `34386a771aaca697f447754e4863d38a` was recovered.\
 However, login was not successful.
