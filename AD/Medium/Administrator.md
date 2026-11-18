@@ -78,3 +78,12 @@ The `nmap` scan identified an open `FTP` service. Attempts to authenticate using
 <img width="148" height="132" alt="image" src="https://github.com/user-attachments/assets/19e54af3-1966-4bcb-b467-a95bb4ef0046" />
 
 Authentication to `SMB` succeeded with the credentials `olivia`:`ichliebedich`. The enumerated usernames were written to `users.txt`. Multiple shares were identified, though none contained anything of interest.
+
+---
+# Shell as Olivia
+<img width="408" height="40" alt="image" src="https://github.com/user-attachments/assets/7b5b7c34-7437-451e-a441-5e78d0631fea" />
+
+Successfully authenticated to the target machine using the provided credentials. However, no user flag was found.
+
+## Enumeration
+<img width="1012" height="655" alt="image" src="https://github.com/user-attachments/assets/f8efba31-6b3b-4c0c-b4e9-b065da854a4e" />
