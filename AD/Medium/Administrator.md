@@ -77,3 +77,4 @@ The `nmap` scan identified an open `FTP` service. Attempts to authenticate using
 <img width="853" height="202" alt="image" src="https://github.com/user-attachments/assets/ae598900-13ca-40a8-93af-5ce08e21628e" />
 <img width="148" height="132" alt="image" src="https://github.com/user-attachments/assets/19e54af3-1966-4bcb-b467-a95bb4ef0046" />
 
+Authentication to `SMB` succeeded with the credentials `olivia`:`ichliebedich`. The enumerated usernames were written to `users.txt`. Multiple shares were identified, though none contained anything of interest.
