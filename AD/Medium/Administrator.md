@@ -87,3 +87,4 @@ Successfully authenticated to the target machine using the provided credentials.
 
 ## Enumeration
 <img width="1012" height="655" alt="image" src="https://github.com/user-attachments/assets/f8efba31-6b3b-4c0c-b4e9-b065da854a4e" />
+<img width="529" height="209" alt="image" src="https://github.com/user-attachments/assets/81bf876a-03a0-4d1e-97bd-61cb7302c3a0" />
