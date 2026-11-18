@@ -91,3 +91,7 @@ Successfully authenticated to the target machine using the provided credentials.
 <img width="618" height="624" alt="image" src="https://github.com/user-attachments/assets/ae1a7621-4ddd-43f9-8623-21e6b4fd23e8" />
 
 The authenticated user did not possess useful privileges and was not a member of any privileged groups. No items of interest were discovered in the home directory. Although the user `emily` was identified under `Users`, access was not permitted.
+
+### BloodHound
+<img width="1096" height="401" alt="image" src="https://github.com/user-attachments/assets/a2343002-6664-4255-b84e-0963a9ba120c" />
+
