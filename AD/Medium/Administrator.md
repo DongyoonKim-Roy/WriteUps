@@ -94,4 +94,8 @@ The authenticated user did not possess useful privileges and was not a member of
 
 ### BloodHound
 <img width="1096" height="401" alt="image" src="https://github.com/user-attachments/assets/a2343002-6664-4255-b84e-0963a9ba120c" />
+<img width="653" height="545" alt="image" src="https://github.com/user-attachments/assets/c7160f65-f144-4965-a386-50c092924abf" />
+<img width="662" height="137" alt="image" src="https://github.com/user-attachments/assets/ba0a3503-c6f1-4230-a0c6-efb9153c8874" />
 
+
+User `Olivia` has `GenericAll` Privilege on user `Michael`. 
