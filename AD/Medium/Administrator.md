@@ -62,3 +62,8 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 99.40 seconds
 ```
 From `nmap` scan, the domain,`administrator.htb` was identified and it was added to `/etc/hosts` file to allow proper name resolution.
+
+# Enumeration
+## FTP - TCP 21
+<img width="314" height="159" alt="image" src="https://github.com/user-attachments/assets/e75f729a-064c-414b-8c05-97320a8e5662" />
+<img width="259" height="169" alt="image" src="https://github.com/user-attachments/assets/a335e0e5-6561-4351-bf08-91f4a7a5b12c" />
