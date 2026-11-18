@@ -97,6 +97,6 @@ The authenticated user did not possess useful privileges and was not a member of
 <img width="653" height="545" alt="image" src="https://github.com/user-attachments/assets/c7160f65-f144-4965-a386-50c092924abf" />
 <img width="662" height="137" alt="image" src="https://github.com/user-attachments/assets/ba0a3503-c6f1-4230-a0c6-efb9153c8874" />
 
-
 `Olivia` possessed `GenericAll` privileges on `Michael`. The `Michael` account was Kerberoasted and a hash was obtained, though password recovery was unsuccessful.
 
+<img width="1168" height="163" alt="image" src="https://github.com/user-attachments/assets/78a8472f-63d4-4d38-b809-bf1f0b5f1786" />
