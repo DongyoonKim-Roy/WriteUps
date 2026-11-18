@@ -88,3 +88,6 @@ Successfully authenticated to the target machine using the provided credentials.
 ## Enumeration
 <img width="1012" height="655" alt="image" src="https://github.com/user-attachments/assets/f8efba31-6b3b-4c0c-b4e9-b065da854a4e" />
 <img width="529" height="209" alt="image" src="https://github.com/user-attachments/assets/81bf876a-03a0-4d1e-97bd-61cb7302c3a0" />
+<img width="618" height="624" alt="image" src="https://github.com/user-attachments/assets/ae1a7621-4ddd-43f9-8623-21e6b4fd23e8" />
+
+The authenticated user did not possess useful privileges and was not a member of any privileged groups. No items of interest were discovered in the home directory. Although the user `emily` was identified under `Users`, access was not permitted.
