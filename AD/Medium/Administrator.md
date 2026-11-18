@@ -70,3 +70,10 @@ From `nmap` scan, the domain,`administrator.htb` was identified and it was added
 <img width="432" height="157" alt="image" src="https://github.com/user-attachments/assets/60cf3054-8dd5-405b-9ab6-e2ac3aa3fa40" />
 
 The `nmap` scan identified an open `FTP` service. Attempts to authenticate using the `olivia`, `anonymous` and `ftp` accounts were unsuccessful.
+
+## SMB - TCP 445
+<img width="854" height="79" alt="image" src="https://github.com/user-attachments/assets/3da1e869-5e12-440c-8808-0a66112cb3b0" />
+<img width="848" height="332" alt="image" src="https://github.com/user-attachments/assets/282faaea-de65-4a4b-b6b7-1345dd962520" />
+<img width="853" height="202" alt="image" src="https://github.com/user-attachments/assets/ae598900-13ca-40a8-93af-5ce08e21628e" />
+<img width="148" height="132" alt="image" src="https://github.com/user-attachments/assets/19e54af3-1966-4bcb-b467-a95bb4ef0046" />
+
