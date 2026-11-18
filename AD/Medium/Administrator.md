@@ -67,3 +67,6 @@ From `nmap` scan, the domain,`administrator.htb` was identified and it was added
 ## FTP - TCP 21
 <img width="314" height="159" alt="image" src="https://github.com/user-attachments/assets/e75f729a-064c-414b-8c05-97320a8e5662" />
 <img width="259" height="169" alt="image" src="https://github.com/user-attachments/assets/a335e0e5-6561-4351-bf08-91f4a7a5b12c" />
+<img width="432" height="157" alt="image" src="https://github.com/user-attachments/assets/60cf3054-8dd5-405b-9ab6-e2ac3aa3fa40" />
+
+The `nmap` scan identified an open `FTP` service. Attempts to authenticate using the `olivia`, `anonymous` and `ftp` accounts were unsuccessful.
