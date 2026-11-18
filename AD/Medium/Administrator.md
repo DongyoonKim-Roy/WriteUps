@@ -61,3 +61,4 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 99.40 seconds
 ```
+From `nmap` scan, the domain,`administrator.htb` was identified and it was added to `/etc/hosts` file to allow proper name resolution.
