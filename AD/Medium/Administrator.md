@@ -116,3 +116,13 @@ Then, `Michael` has `ForceChangePassword` Privilege over the `Benjamin` account.
 <img width="806" height="447" alt="image" src="https://github.com/user-attachments/assets/98a4bb75-5fd1-4a44-9eb7-af11295b2158" />
 
 After trying several enumeration techniques such as `GetUserSPNs`, `GetNPUsers`, and `SMB` checks, I found nothing useful. I went back to `BloodHound` and discovered that `Emily` is a member of the `Remote Management Users group`, which allows her to access `PowerShell` on the target.
+
+<img width="1164" height="372" alt="image" src="https://github.com/user-attachments/assets/7fa12345-1fd0-41ea-ad91-a4d1d1ed2e5b" />
+
+Since nothing useful was found on the `SMB` server, I tried accessing the `FTP` server. `Benjamin` was able to log in and found a file named `Backup.psafe3`.
+
+## Crack Backup.psafe3
+<img width="547" height="389" alt="image" src="https://github.com/user-attachments/assets/6a51bb3b-bd0e-4c47-a98e-ab770e755c92" />
+
+I tried to open the `Backup.psafe3` file, but it was password-protected. I tried several passwords, but none of them worked.
+
