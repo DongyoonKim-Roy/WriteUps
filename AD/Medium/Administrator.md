@@ -152,4 +152,4 @@ Three new passwords were found in the file. Using one of them, `Emily` was able 
 <img width="713" height="118" alt="image" src="https://github.com/user-attachments/assets/07f1497b-8a88-42df-9f89-82227ac6e6ad" />
 <img width="523" height="163" alt="image" src="https://github.com/user-attachments/assets/525e1ae6-d7db-496b-9b93-4c2c1b80d191" />
 
-User `Emily` has a `GenericWrite` privilege over `Ethan`, so  
+`Ethan` has both `GetChanges` and `GetChangesAll` privileges on the domain, which allowed him to run `secretsdump` and successfully recover the Administrator hash.
