@@ -100,3 +100,5 @@ The authenticated user did not possess useful privileges and was not a member of
 `Olivia` possessed `GenericAll` privileges on `Michael`. The `Michael` account was Kerberoasted and a hash was obtained, though password recovery was unsuccessful.
 
 <img width="1168" height="163" alt="image" src="https://github.com/user-attachments/assets/78a8472f-63d4-4d38-b809-bf1f0b5f1786" />
+
+Since `Olivia` has `GenericAll` rights over the `Michael` account, she can reset his password. The new password was set to `password-1`
