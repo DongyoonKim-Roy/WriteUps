@@ -136,3 +136,7 @@ Using `pwsafe2john`, I extracted the hash from the file and saved it to `hash.tx
 <img width="1679" height="67" alt="image" src="https://github.com/user-attachments/assets/09cc60d0-3f46-4e43-96ba-6093e831ccb1" />
 
 Three new passwords were found in the file. Using one of them, `Emily` was able to log in via `WinRM`.
+
+<img width="565" height="178" alt="image" src="https://github.com/user-attachments/assets/9a98f112-6339-4cb6-8e75-479ac820b438" />
+
+`user.txt` flag was found on `emily` desktop directory.
