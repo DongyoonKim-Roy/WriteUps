@@ -109,4 +109,10 @@ Since `Olivia` has `GenericAll` rights over the `Michael` account, she can reset
 
 Then, `Michael` has `ForceChangePassword` Privilege over the `Benjamin` account. The new password was set to `password-1` as well. The user was able to access to `SMB` service.
 
+---
 # Shell as Emily
+## Enumeration
+<img width="1171" height="109" alt="image" src="https://github.com/user-attachments/assets/5d8e2aed-b3a5-4dd7-b68a-cad21ca76d9d" />
+<img width="806" height="447" alt="image" src="https://github.com/user-attachments/assets/98a4bb75-5fd1-4a44-9eb7-af11295b2158" />
+
+After trying several enumeration techniques such as `GetUserSPNs`, `GetNPUsers`, and `SMB` checks, I found nothing useful. I went back to `BloodHound` and discovered that `Emily` is a member of the `Remote Management Users group`, which allows her to access `PowerShell` on the target.
