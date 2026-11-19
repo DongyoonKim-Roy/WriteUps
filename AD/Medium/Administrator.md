@@ -140,3 +140,6 @@ Three new passwords were found in the file. Using one of them, `Emily` was able 
 <img width="565" height="178" alt="image" src="https://github.com/user-attachments/assets/9a98f112-6339-4cb6-8e75-479ac820b438" />
 
 `user.txt` flag was found on `emily` desktop directory.
+
+---
+# Shell as Administrator
