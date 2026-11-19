@@ -101,4 +101,12 @@ The authenticated user did not possess useful privileges and was not a member of
 
 <img width="1168" height="163" alt="image" src="https://github.com/user-attachments/assets/78a8472f-63d4-4d38-b809-bf1f0b5f1786" />
 
-Since `Olivia` has `GenericAll` rights over the `Michael` account, she can reset his password. The new password was set to `password-1`
+Since `Olivia` has `GenericAll` rights over the `Michael` account, she can reset his password. The new password was set to `password-1`.
+
+<img width="674" height="173" alt="image" src="https://github.com/user-attachments/assets/72d25b39-2d54-49f6-a132-7495803a5290" />
+<img width="1004" height="40" alt="image" src="https://github.com/user-attachments/assets/26ed97ec-adee-437f-b74a-576e24ae9fd1" />
+<img width="1152" height="75" alt="image" src="https://github.com/user-attachments/assets/f82ab0c0-bc39-45e9-8fc0-f3fb0d77ac80" />
+
+Then, `Michael` has `ForceChangePassword` Privilege over the `Benjamin` account. The new password was set to `password-1` as well. The user was able to access to `SMB` service.
+
+# Shell as Emily
