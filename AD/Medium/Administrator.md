@@ -146,6 +146,8 @@ Three new passwords were found in the file. Using one of them, `Emily` was able 
 <img width="767" height="196" alt="image" src="https://github.com/user-attachments/assets/f067b843-a3c1-4a1c-ba1d-e4be2b3f973d" />
 <img width="832" height="715" alt="image" src="https://github.com/user-attachments/assets/35b5d09c-74ca-445c-a7df-64b7fa03f747" />
 
+`Emily` has `GenericWrite` privileges over Ethan, which allowed her to extract `Ethan’s` hash and successfully recover his password.
+
 <img width="1030" height="422" alt="image" src="https://github.com/user-attachments/assets/64a9ce46-4146-42d7-985d-3e935005deaa" />
 <img width="713" height="118" alt="image" src="https://github.com/user-attachments/assets/07f1497b-8a88-42df-9f89-82227ac6e6ad" />
 <img width="523" height="163" alt="image" src="https://github.com/user-attachments/assets/525e1ae6-d7db-496b-9b93-4c2c1b80d191" />
