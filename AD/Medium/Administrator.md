@@ -126,3 +126,7 @@ Since nothing useful was found on the `SMB` server, I tried accessing the `FTP` 
 
 I tried to open the `Backup.psafe3` file, but it was password-protected. I tried several passwords, but none of them worked.
 
+<img width="1215" height="38" alt="image" src="https://github.com/user-attachments/assets/a530436b-9cc0-4668-b3bf-09bca9a9eabc" />
+<img width="282" height="81" alt="image" src="https://github.com/user-attachments/assets/b109a253-0096-4409-a9ec-2fce6ad59cef" />
+
+Using `pwsafe2john`, I extracted the hash from the file and saved it to `hash.txt`. I then successfully recovered the password, `tekieromucho`, with `John the Ripper`.
