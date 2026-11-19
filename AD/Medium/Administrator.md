@@ -130,3 +130,9 @@ I tried to open the `Backup.psafe3` file, but it was password-protected. I tried
 <img width="282" height="81" alt="image" src="https://github.com/user-attachments/assets/b109a253-0096-4409-a9ec-2fce6ad59cef" />
 
 Using `pwsafe2john`, I extracted the hash from the file and saved it to `hash.txt`. I then successfully recovered the password, `tekieromucho`, with `John the Ripper`.
+
+<img width="897" height="586" alt="image" src="https://github.com/user-attachments/assets/baa3143d-4339-4106-8356-4d91f63534b3" />
+<img width="263" height="61" alt="image" src="https://github.com/user-attachments/assets/e33e2cf2-499e-4dd6-b263-b4fa037aceed" />
+<img width="1679" height="67" alt="image" src="https://github.com/user-attachments/assets/09cc60d0-3f46-4e43-96ba-6093e831ccb1" />
+
+Three new passwords were found in the file. Using one of them, `Emily` was able to log in via `WinRM`.
