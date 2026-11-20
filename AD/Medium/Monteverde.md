@@ -79,4 +79,4 @@ The user `mhope` doesn't have special privilege, but it is in `Azure Admins` gro
 
 <img width="704" height="218" alt="image" src="https://github.com/user-attachments/assets/8b0bf9dd-fe74-463b-a1b0-267fe2cb3873" />
 
-In the `mhope` directory, 
+In the `mhope` directory, there was a `.Azure` folder containing several files, but nothing interesting was found.
