@@ -76,3 +76,7 @@ Using the discovered password, we successfully logged into the host as `mhope` v
 <img width="1283" height="664" alt="image" src="https://github.com/user-attachments/assets/398e1ba6-6ac1-467c-90d8-e3435c8956e6" />
 
 The user `mhope` doesn't have special privilege, but it is in `Azure Admins` group.
+
+<img width="704" height="218" alt="image" src="https://github.com/user-attachments/assets/8b0bf9dd-fe74-463b-a1b0-267fe2cb3873" />
+
+In the `mhope` directory, 
