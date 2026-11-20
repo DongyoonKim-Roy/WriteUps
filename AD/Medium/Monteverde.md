@@ -85,3 +85,8 @@ In the `mhope` directory, there was a `.Azure` folder containing several files, 
 <img width="1119" height="913" alt="image" src="https://github.com/user-attachments/assets/9b902310-4075-490e-9998-baf37ab3eda2" />
 
 In the `Program Files` directory, there were several Azure-related folders, but nothing interesting was found and no special privileges were present on those folders.
+
+
+---
+# Shell as Administrator
+## Exploit Azure
