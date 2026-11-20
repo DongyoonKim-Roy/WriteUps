@@ -1,4 +1,4 @@
-# Monteverde
+<img width="731" height="265" alt="image" src="https://github.com/user-attachments/assets/89f2a2ce-eb9d-42b0-8dc0-c4178ebe5c25" /># Monteverde
 # Machine Info
 Monteverde is a Medium Windows machine that features Azure AD Connect. The domain is enumerated and a user list is created. Through password spraying, the SABatchJobs service account is found to have the username as a password. Using this service account, it is possible to enumerate SMB Shares on the system, and the $users share is found to be world-readable. An XML file used for an Azure AD account is found within a user folder and contains a password. Due to password reuse, we can connect to the domain controller as mhope using WinRM. Enumeration shows that Azure AD Connect is installed. It is possible to extract the credentials for the account that replicates the directory changes to Azure (in this case the default domain administrator).
 
@@ -59,6 +59,10 @@ This successfully authenticated the user `SABatchJobs` with the password `SABatc
 <img width="625" height="162" alt="image" src="https://github.com/user-attachments/assets/e5afe75a-443c-4ee6-b52c-a3fae578c587" />
 <img width="615" height="76" alt="image" src="https://github.com/user-attachments/assets/4fdb2679-a73a-4014-aceb-3ed3f6228a6a" />
 <img width="731" height="265" alt="image" src="https://github.com/user-attachments/assets/59a142f0-dc05-4fa6-80ef-66bf51d178b5" />
+
+The user `SABatchJobs` had access to several shares.\
+Nothing interesting was found in `IPC$`, `SYSVOL`, or `NETLOGON`. However, in the `users$` share, there was a file named `azure.xml` inside the `mhope` directory.\
+In `azure.xml`, there is a password, `4n0therD4y@n0th3r$`.
 
 ---
 
