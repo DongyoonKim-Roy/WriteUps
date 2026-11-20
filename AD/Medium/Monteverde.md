@@ -35,3 +35,4 @@ PORT      STATE SERVICE       VERSION
 49750/tcp open  msrpc         Microsoft Windows RPC
 Service Info: Host: MONTEVERDE; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+From `nmap` scan, the domain, megabank.local, and Domain Controller, `Monteverde` were found. They were added to `/etc/hosts` file to allow proper name resolution.
