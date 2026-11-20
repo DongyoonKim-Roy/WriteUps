@@ -59,11 +59,12 @@ This successfully authenticated the user `SABatchJobs` with the password `SABatc
 <img width="625" height="162" alt="image" src="https://github.com/user-attachments/assets/e5afe75a-443c-4ee6-b52c-a3fae578c587" />
 <img width="615" height="76" alt="image" src="https://github.com/user-attachments/assets/4fdb2679-a73a-4014-aceb-3ed3f6228a6a" />
 <img width="731" height="265" alt="image" src="https://github.com/user-attachments/assets/59a142f0-dc05-4fa6-80ef-66bf51d178b5" />
+<img width="194" height="54" alt="image" src="https://github.com/user-attachments/assets/4291ca50-2c48-4935-affa-1a2383a915ec" />
 
 The user `SABatchJobs` had access to several shares.\
 Nothing interesting was found in `IPC$`, `SYSVOL`, or `NETLOGON`.\
 However, in the `users$` share, there was a file named `azure.xml` inside the `mhope` directory.\
-In `azure.xml`, there is a password, `4n0therD4y@n0th3r$`.
+In `azure.xml`, there is a password, `4n0therD4y@n0th3r$`, and it was saved into `passwords.txt` file.
 
 ---
 
