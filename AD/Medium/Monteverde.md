@@ -67,3 +67,4 @@ In `azure.xml`, there is a password, `4n0therD4y@n0th3r$`.
 
 ---
 
+<img width="731" height="265" alt="image" src="https://github.com/user-attachments/assets/89f2a2ce-eb9d-42b0-8dc0-c4178ebe5c25" />
