@@ -71,3 +71,8 @@ In `azure.xml`, there is a password, `4n0therD4y@n0th3r$`, and it was saved into
 <img width="487" height="169" alt="image" src="https://github.com/user-attachments/assets/32ebbc8b-64b8-4292-afdd-8ed0db0a001a" />
 
 Using the discovered password, we successfully logged into the host as `mhope` via `evil-winrm` and obtained the `user.txt` flag.
+
+## Enumeration
+<img width="1283" height="664" alt="image" src="https://github.com/user-attachments/assets/398e1ba6-6ac1-467c-90d8-e3435c8956e6" />
+
+The user `mhope` doesn't have special privilege, but it is in `Azure Admins` group.
