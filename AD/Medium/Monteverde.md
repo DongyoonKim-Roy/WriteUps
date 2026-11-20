@@ -82,3 +82,6 @@ The user `mhope` doesn't have special privilege, but it is in `Azure Admins` gro
 In the `mhope` directory, there was a `.Azure` folder containing several files, but nothing interesting was found.
 
 <img width="805" height="199" alt="image" src="https://github.com/user-attachments/assets/59847b0d-6770-4b8e-b503-b95b3c8c3dd8" />
+<img width="1119" height="913" alt="image" src="https://github.com/user-attachments/assets/9b902310-4075-490e-9998-baf37ab3eda2" />
+
+In the `Program Files` directory, there were several Azure-related folders, but nothing interesting was found and no special privileges were present on those folders.
