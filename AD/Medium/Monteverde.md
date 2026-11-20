@@ -52,6 +52,7 @@ From `nmap` scan, the domain, megabank.local, and Domain Controller, `Monteverde
 <img width="969" height="282" alt="image" src="https://github.com/user-attachments/assets/9092e468-3f04-499f-833b-a7ed347391f5" />
 
 `Null session`, `guest`, and `anonymous` authentication were unsuccessful.\
-Since there were no known passwords, the `users.txt` file was used as the password list. This successfully authenticated the user `SABatchJobs` with the password `SABatchJobs`.
+Since there were no known passwords, the `users.txt` file was used as the password list.\
+This successfully authenticated the user `SABatchJobs` with the password `SABatchJobs`.
 
 ---
