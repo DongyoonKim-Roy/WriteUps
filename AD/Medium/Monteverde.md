@@ -38,8 +38,7 @@ Service Info: Host: MONTEVERDE; OS: Windows; CPE: cpe:/o:microsoft:windows
 From `nmap` scan, the domain, megabank.local, and Domain Controller, `Monteverde` were found.\
 They were added to `/etc/hosts` file to allow proper name resolution.
 
-
---
+---
 ## LDAP - TCP 389
 <img width="890" height="269" alt="image" src="https://github.com/user-attachments/assets/37fcd468-bf22-444f-b26e-4b42fbbad6cd" />
 <img width="163" height="160" alt="image" src="https://github.com/user-attachments/assets/5b95e8f2-2001-49da-9fef-d5ff7d75d8c8" />
