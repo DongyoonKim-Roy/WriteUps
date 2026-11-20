@@ -129,7 +129,7 @@ Write-Host ("Password: " + $password.Password)
 
 I was looking for a privilege escalation path through the `Azure Admins group`, but I couldn't find anything useful. After hours of digging, I checked the hint and found this blog post: [blog.xpnsec.com/azuread-connect-for-redteam](https://blog.xpnsec.com/azuread-connect-for-redteam/)
 
-I took the exploit from there and modified the connection string from `Data Source=(localdb)\.\ADSync` to `Server=127.0.0.1;Database=ADSync;Integrated Security=True`, because the box was using a regular MSSQL instance instead of LocalDB.
+I took the exploit from there and modified the connection string from `Data Source=(localdb)\.\ADSync` to `Server=127.0.0.1;Database=ADSync;Integrated Security=True`, because the box was using a regular `MSSQL` instance instead of `LocalDB`.
 
 <img width="823" height="66" alt="image" src="https://github.com/user-attachments/assets/6214769e-327c-4e4b-ab1d-721c8804c569" />
 
