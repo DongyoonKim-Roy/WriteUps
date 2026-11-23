@@ -148,4 +148,7 @@ Subsequently, the `username-anarchy` tool was used to generate additional userna
 ## Kerberos - TCP 88 
 <img width="1369" height="171" alt="image" src="https://github.com/user-attachments/assets/b710659b-d2ec-4540-ae2b-5deacea44783" />
 
-Using the enumerated usernames, `impacket-GetNPUsers` was run against the domain controller. This resulted in the successful retrieval of a TGT for the account `fsmith`.
+Using the enumerated usernames, `impacket-GetNPUsers` was run against the domain controller. This resulted in the successful retrieval of a TGT for the account `fsmith`, and saved into `hash.txt` file.
+
+<img width="153" height="162" alt="image" src="https://github.com/user-attachments/assets/331eac78-2577-4ccd-aebe-2d795e2eaf31" />
+
