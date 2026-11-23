@@ -153,3 +153,9 @@ Using the enumerated usernames, `impacket-GetNPUsers` was run against the domain
 <img width="153" height="162" alt="image" src="https://github.com/user-attachments/assets/331eac78-2577-4ccd-aebe-2d795e2eaf31" />
 
 Using `John the Ripper`, the password was recovered as `Thestrokes23`.
+
+# Shell as fsmith
+<img width="871" height="105" alt="image" src="https://github.com/user-attachments/assets/d7013543-1f45-429a-b1c4-f7a0a22e7ee1" />
+<img width="486" height="313" alt="image" src="https://github.com/user-attachments/assets/89cbd2be-868b-4742-bf31-a905ddcb9ebb" />
+
+Using the compromised credentials, remote access was established through `evil-winrm` as `fsmith`. This session allowed retrieval of the `user.txt` flag.
