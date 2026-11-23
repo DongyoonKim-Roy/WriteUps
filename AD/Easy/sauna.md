@@ -152,3 +152,4 @@ Using the enumerated usernames, `impacket-GetNPUsers` was run against the domain
 
 <img width="153" height="162" alt="image" src="https://github.com/user-attachments/assets/331eac78-2577-4ccd-aebe-2d795e2eaf31" />
 
+Using `John the Ripper`, the password was recovered as `Thestrokes23`.
