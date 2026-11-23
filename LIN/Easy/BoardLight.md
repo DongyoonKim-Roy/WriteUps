@@ -35,4 +35,6 @@ The `nmap` scan revealed that only ports `22` (SSH) and `80` (HTTP) were open on
 <img width="912" height="637" alt="image" src="https://github.com/user-attachments/assets/12766956-6959-48cd-b444-1768f9f542fa" />
 <img width="468" height="77" alt="image" src="https://github.com/user-attachments/assets/e3ea831c-42f4-42e4-9b4e-7a2ab2e80a13" />
 
-The web application features several navigation sections, including `Home`, `About`, `What we do`, `Contact us`, and `Search`. A user input form was present, and basic `XSS` testing was performed, which yielded no results. The domain `board.htb` was also identified in the page footer.
+The web application features several navigation sections, including `Home`, `About`, `What we do`, `Contact us`, and `Search`.\
+A user input form was present, and basic `XSS` testing was performed, which yielded no results.\
+The domain `board.htb` was also identified in the page footer, and it was added to `/etc/hosts` file.
