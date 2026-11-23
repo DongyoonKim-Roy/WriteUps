@@ -38,3 +38,6 @@ The `nmap` scan revealed that only ports `22` (SSH) and `80` (HTTP) were open on
 The web application features several navigation sections, including `Home`, `About`, `What we do`, `Contact us`, and `Search`.\
 A user input form was present, and basic `XSS` testing was performed, which yielded no results.\
 The domain `board.htb` was also identified in the page footer, and it was added to `/etc/hosts` file.
+
+## Directory Brute Force
+<img width="865" height="902" alt="image" src="https://github.com/user-attachments/assets/fb9967da-ae02-4057-a3bc-a04a406bdbfd" />
