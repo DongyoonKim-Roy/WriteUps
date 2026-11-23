@@ -144,3 +144,8 @@ kerb.steven
 sk
 ```
 Subsequently, the `username-anarchy` tool was used to generate additional username permutations based on the names identified on the `About Us` page.
+
+## Kerberos - TCP 88 
+<img width="1369" height="171" alt="image" src="https://github.com/user-attachments/assets/b710659b-d2ec-4540-ae2b-5deacea44783" />
+
+Using the enumerated usernames, `impacket-GetNPUsers` was run against the domain controller. This resulted in the successful retrieval of a TGT for the account `fsmith`.
