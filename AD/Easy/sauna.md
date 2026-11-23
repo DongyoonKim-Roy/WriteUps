@@ -169,3 +169,10 @@ The account `fsmith` held no special `privileges` or `group memberships`. After 
 # Shell as Administrator
 ## Evil-Winrm
 <img width="684" height="757" alt="image" src="https://github.com/user-attachments/assets/6fbd4b57-c7a7-4057-9e6d-eb54da1ae70e" />
+
+The service account `svc_loanmgr` possessed the `GetChanges` and `GetChangesAll` rights on the domain object `egotistical-bank.local`.
+
+<img width="717" height="117" alt="image" src="https://github.com/user-attachments/assets/fa3638bf-69d3-452c-bda4-9253e3300301" />
+<img width="500" height="173" alt="image" src="https://github.com/user-attachments/assets/b9d59216-54bb-4f7e-b0ef-473ad3e510c3" />
+
+Leveraging the `GetChanges` and `GetChangesAll` privileges, a DCSync attack was performed with `impacket-secretsdump`, resulting in the extraction of the `administrator` NTLM hash. Pass-the-hash authentication as `administrator` was then successful, allowing retrieval of the `root.txt` flag.
