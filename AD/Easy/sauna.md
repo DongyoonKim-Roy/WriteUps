@@ -159,3 +159,8 @@ Using `John the Ripper`, the password was recovered as `Thestrokes23`.
 <img width="486" height="313" alt="image" src="https://github.com/user-attachments/assets/89cbd2be-868b-4742-bf31-a905ddcb9ebb" />
 
 Using the compromised credentials, remote access was established through `evil-winrm` as `fsmith`. This session allowed retrieval of the `user.txt` flag.
+
+## Enumeration
+<img width="1047" height="626" alt="image" src="https://github.com/user-attachments/assets/f345b003-b8e6-488e-9f36-15ec6fb0dfa3" />
+
+<img width="587" height="112" alt="image" src="https://github.com/user-attachments/assets/f38a4525-26ce-410d-80c1-dc67a3adb6f6" />
