@@ -42,4 +42,7 @@ PORT      STATE SERVICE       VERSION
 49700/tcp open  msrpc         Microsoft Windows RPC
 Service Info: Host: SAUNA; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+The `nmap` scan identified the domain `egotistical-bank.local` and it was added to `/etc/hosts` file.
 
+# Enumeration
+## HTTP - TCP 80
