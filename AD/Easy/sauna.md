@@ -165,3 +165,7 @@ Using the compromised credentials, remote access was established through `evil-w
 <img width="587" height="112" alt="image" src="https://github.com/user-attachments/assets/f38a4525-26ce-410d-80c1-dc67a3adb6f6" />
 
 The account `fsmith` held no special `privileges` or `group memberships`. After uploading and executing `WinPEAS`, the credentials for the service account `svc_loanmgr` (`Moneymakestheworldgoround!`) were identified.
+
+# Shell as Administrator
+## Evil-Winrm
+<img width="684" height="757" alt="image" src="https://github.com/user-attachments/assets/6fbd4b57-c7a7-4057-9e6d-eb54da1ae70e" />
