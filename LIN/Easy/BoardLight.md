@@ -33,4 +33,5 @@ The `nmap` scan revealed that only ports `22` (SSH) and `80` (HTTP) were open on
 ## HTTP - TCP 80
 <img width="1665" height="714" alt="image" src="https://github.com/user-attachments/assets/3f801da3-266b-493c-8800-46d877047943" />
 <img width="912" height="637" alt="image" src="https://github.com/user-attachments/assets/12766956-6959-48cd-b444-1768f9f542fa" />
+<img width="468" height="77" alt="image" src="https://github.com/user-attachments/assets/e3ea831c-42f4-42e4-9b4e-7a2ab2e80a13" />
 
