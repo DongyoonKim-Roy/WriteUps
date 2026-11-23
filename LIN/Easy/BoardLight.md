@@ -28,3 +28,9 @@ Nmap done: 1 IP address (1 host up) scanned in 31.14 seconds
 ```
 
 The `nmap` scan revealed that only ports `22` (SSH) and `80` (HTTP) were open on the target.
+
+# Enumeration
+## HTTP - TCP 80
+<img width="1665" height="714" alt="image" src="https://github.com/user-attachments/assets/3f801da3-266b-493c-8800-46d877047943" />
+<img width="912" height="637" alt="image" src="https://github.com/user-attachments/assets/12766956-6959-48cd-b444-1768f9f542fa" />
+
