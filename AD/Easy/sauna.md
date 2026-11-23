@@ -48,3 +48,6 @@ The `nmap` scan identified the domain `egotistical-bank.local` and it was added 
 ## HTTP - TCP 80
 <img width="1452" height="1250" alt="image" src="https://github.com/user-attachments/assets/3a042247-7fc6-432f-a3a8-7e5784dc4a78" />
 <img width="1191" height="805" alt="image" src="https://github.com/user-attachments/assets/10ae0723-fe20-4bcb-b50b-988af1d291e2" />
+
+The application features multiple navigation tabs, including `Home`, `About Us`, `Blogs`, `Dropdown`, `Contact Us`, and `Apply Now`.\
+While the `Home`, `Blogs`, `Dropdown`, and `Contact Us` sections did not contain any sensitive information, the `About Us` page revealed several usernames.
