@@ -41,3 +41,7 @@ The domain `board.htb` was also identified in the page footer, and it was added 
 
 ## Directory Brute Force
 <img width="865" height="902" alt="image" src="https://github.com/user-attachments/assets/fb9967da-ae02-4057-a3bc-a04a406bdbfd" />
+<img width="876" height="425" alt="image" src="https://github.com/user-attachments/assets/9585ad73-37bc-4d69-a40b-3d6605b3b553" />
+
+Directory brute-forcing revealed several accessible directories; however, none of them contained anything of interest.\
+On the other hand, fuzzing identified a subdomain named `crm`.
