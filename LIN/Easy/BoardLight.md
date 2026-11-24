@@ -53,4 +53,7 @@ On the other hand, fuzzing identified a subdomain named `crm`.
 There was login page was found and `Dolibarr v17.0.0` was running on the subdomain. Authentication with `admin:admin` was successful.
 
 ## CVE-2023-30253
+<img width="1238" height="558" alt="image" src="https://github.com/user-attachments/assets/fb21a233-f17c-42a4-ad18-1c1004397db6" />
+<img width="991" height="218" alt="image" src="https://github.com/user-attachments/assets/c27a9e5d-1a45-47f8-bfe8-11c434f40118" />
 
+An exploit was found for `CVE-2023-30253` on GitHub. After running it, successfully got a shell as the `www-data` user.
