@@ -52,4 +52,5 @@ On the other hand, fuzzing identified a subdomain named `crm`.
 
 There was login page was found and `Dolibarr v17.0.0` was running on the subdomain. Authentication with `admin:admin` was successful.
 
-## CVE 
+## CVE-2023-30253
+
