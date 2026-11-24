@@ -70,7 +70,8 @@ An exploit was found for `CVE-2023-30253` on GitHub. After running it, successfu
 `LinPEAS` enumeration yielded no useful findings.\ 
 `sudo -l` required the `www-data` password, so it could not be run.
 Checking `/var/www/html/crm.board.htb/htdocs/conf/conf.php` revealed the database credentials.\
-With the recovered password, changing user to `larissa` was successful.
+With the recovered password, changing user to `larissa` was successful.\
+In home directory, `user.txt` flag was found.
 
 ---
 # Shell as root
