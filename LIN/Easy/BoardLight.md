@@ -76,3 +76,5 @@ In home directory, `user.txt` flag was found.
 ---
 # Shell as root
 <img width="780" height="146" alt="image" src="https://github.com/user-attachments/assets/5c808efe-069c-4bbe-afe7-e372e573e7bd" />
+<img width="710" height="340" alt="image" src="https://github.com/user-attachments/assets/35959cae-fbbe-4bf7-bfd7-1a06a9f18e28" />
+
