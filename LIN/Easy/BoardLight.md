@@ -29,6 +29,7 @@ Nmap done: 1 IP address (1 host up) scanned in 31.14 seconds
 
 The `nmap` scan revealed that only ports `22` (SSH) and `80` (HTTP) were open on the target.
 
+---
 # Enumeration
 ## HTTP - TCP 80
 <img width="1665" height="714" alt="image" src="https://github.com/user-attachments/assets/3f801da3-266b-493c-8800-46d877047943" />
@@ -57,3 +58,7 @@ There was login page was found and `Dolibarr v17.0.0` was running on the subdoma
 <img width="991" height="218" alt="image" src="https://github.com/user-attachments/assets/c27a9e5d-1a45-47f8-bfe8-11c434f40118" />
 
 An exploit was found for `CVE-2023-30253` on GitHub. After running it, successfully got a shell as the `www-data` user.
+
+---
+# Shell as larissa
+## Enumeration
