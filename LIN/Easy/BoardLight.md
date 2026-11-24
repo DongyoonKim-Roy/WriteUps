@@ -64,4 +64,10 @@ An exploit was found for `CVE-2023-30253` on GitHub. After running it, successfu
 ## Enumeration
 <img width="279" height="46" alt="image" src="https://github.com/user-attachments/assets/6bf615a1-5268-47b9-acbd-4cca38cf85dc" />
 <img width="639" height="314" alt="image" src="https://github.com/user-attachments/assets/920903ff-bd63-4559-ab60-302da5eb5dc3" />
+<img width="548" height="54" alt="image" src="https://github.com/user-attachments/assets/054113b5-5949-46ef-bc48-61c6cfa13a31" />
+<img width="684" height="44" alt="image" src="https://github.com/user-attachments/assets/2d409aad-43bc-4429-bf57-df23d5030420" />
 
+After enumerate by using `linpeas`, nothing useful information was found. Also, 
+
+---
+# Shell as root
