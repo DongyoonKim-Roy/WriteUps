@@ -45,3 +45,11 @@ The domain `board.htb` was also identified in the page footer, and it was added 
 
 Directory brute-forcing revealed several accessible directories; however, none of them contained anything of interest.\
 On the other hand, fuzzing identified a subdomain named `crm`.
+
+## crm.board.htb
+<img width="1258" height="677" alt="image" src="https://github.com/user-attachments/assets/fbde49fe-35a3-4c3e-8efd-3664c98116e8" />
+<img width="1904" height="376" alt="image" src="https://github.com/user-attachments/assets/e3a0440a-31cc-4e8d-ac8a-99c879084fc3" />
+
+There was login page was found and `Dolibarr v17.0.0` was running on the subdomain. Authentication with `admin:admin` was successful.
+
+## CVE 
