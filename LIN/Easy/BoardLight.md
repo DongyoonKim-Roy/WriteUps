@@ -67,7 +67,10 @@ An exploit was found for `CVE-2023-30253` on GitHub. After running it, successfu
 <img width="548" height="54" alt="image" src="https://github.com/user-attachments/assets/054113b5-5949-46ef-bc48-61c6cfa13a31" />
 <img width="684" height="44" alt="image" src="https://github.com/user-attachments/assets/2d409aad-43bc-4429-bf57-df23d5030420" />
 
-After enumerate by using `linpeas`, nothing useful information was found. Also, 
+`LinPEAS` enumeration yielded no useful findings.\ 
+`sudo -l` required the `www-data` password, so it could not be run.
+Checking `/var/www/html/crm.board.htb/htdocs/conf/conf.php` revealed the database credentials.\
+With the recovered password, changing user to `larissa` was successful.
 
 ---
 # Shell as root
