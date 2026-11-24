@@ -62,3 +62,6 @@ An exploit was found for `CVE-2023-30253` on GitHub. After running it, successfu
 ---
 # Shell as larissa
 ## Enumeration
+<img width="279" height="46" alt="image" src="https://github.com/user-attachments/assets/6bf615a1-5268-47b9-acbd-4cca38cf85dc" />
+<img width="639" height="314" alt="image" src="https://github.com/user-attachments/assets/920903ff-bd63-4559-ab60-302da5eb5dc3" />
+
