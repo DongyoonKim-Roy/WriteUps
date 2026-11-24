@@ -75,9 +75,21 @@ In home directory, `user.txt` flag was found.
 
 ---
 # Shell as root
+## Enumeration
 <img width="780" height="146" alt="image" src="https://github.com/user-attachments/assets/5c808efe-069c-4bbe-afe7-e372e573e7bd" />
 <img width="710" height="340" alt="image" src="https://github.com/user-attachments/assets/35959cae-fbbe-4bf7-bfd7-1a06a9f18e28" />
 
 `LinPEAS` identified ports `3306` and `33060`, both running `MSSQL`.\
 Logging in with the found credentials yielded no useful results.
-After basic enumeration, files with `SUID bit` were identified. 
+After basic enumeration, files with `SUID bit` were identified.
+The Enlightenment-related binaries especially stood out.
+
+## CVE-2022-37706
+<img width="898" height="802" alt="image" src="https://github.com/user-attachments/assets/2737ab06-36d1-43e3-bd58-790aaffd0cd6" />
+
+After researching a bit, an exploit for the service was found.
+
+<img width="467" height="201" alt="image" src="https://github.com/user-attachments/assets/26067b9d-09a8-47a3-af44-903e9152777b" />
+<img width="1052" height="278" alt="image" src="https://github.com/user-attachments/assets/0eebfdf9-1250-437f-9f11-d8195ca17907" />
+
+By following the exploit instructions, a root shell was gained and the `root.txt` flag was found on `/root` directory.
